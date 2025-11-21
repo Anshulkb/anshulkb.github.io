@@ -1,2 +1,0 @@
-sap.ui.define(["sap/ui/core/mvc/Controller","sap/m/MessageToast"],function(e,o){"use strict";return e.extend("ui5.quickstart.controller.Panel",{onPress(){const e=this.getView().getModel("i18n").getResourceBundle();const t=this.getView().getModel("oComponentModel").getProperty("/recipient/name");const i=e.getText("helloMsg",[t]);o.show(i)},async onOpenDialog(){this.oDialog??=await this.loadFragment({name:"ui5.quickstart.fragment.Dialog"});this.oDialog.open()},onCloseDialog(){this.oDialog.close()}})});
-//# sourceMappingURL=Panel.controller.js.map
