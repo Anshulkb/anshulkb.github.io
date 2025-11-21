@@ -1,0 +1,14 @@
+<mvc:View
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    controllerName="ui5.quickstart.controller.App"
+    displayBlock="true"
+>
+    <Shell
+        title="Shell"
+        visible="true"
+        showLogout="true"
+    >
+        <App id="app" />
+    </Shell>
+</mvc:View>

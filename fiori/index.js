@@ -1,0 +1,2 @@
+sap.ui.define(["sap/m/Button","sap/m/MessageToast","sap/ui/core/mvc/XMLView","sap/ui/core/ComponentContainer"],(t,e,s,a)=>{"use strict";new a({name:"ui5.quickstart",settings:{id:"quickstart"},async:true}).placeAt("content")});
+//# sourceMappingURL=index.js.map

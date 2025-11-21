@@ -1,0 +1,27 @@
+<mvc:View
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    controllerName="ui5.quickstart.controller.Detail"
+    xmlns:control="ui5.quickstart.control"
+>
+    <Page
+        title="{i18n>detailPageTitle}"
+        showNavButton="true"
+        navButtonPress="onNavBack"
+    >
+        <content>
+            <ObjectHeader
+                title="{invoice>ProductName}"
+                intro="{invoice>ShipperName}"
+            />
+            <control:ProductRating
+                id="rating"
+                class="sapUiSmallMarginBeginEnd"
+                change="onRatingChange"
+            />
+            <Text
+                text="{path:'invoice>ProductName', formatter:'.Formatter.returnText'}"
+            />
+        </content>
+    </Page>
+</mvc:View>

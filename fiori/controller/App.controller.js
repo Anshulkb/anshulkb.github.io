@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/mvc/Controller","sap/m/MessageToast","sap/ui/model/json/JSONModel","sap/ui/model/resource/ResourceModel"],(e,o,s,t)=>{"use strict";return e.extend("ui5.quickstart.App",{onInit(){console.log(this.getOwnerComponent().getModel("invoice"))}})});
+//# sourceMappingURL=App.controller.js.map

@@ -1,0 +1,2 @@
+sap.ui.define([],function(){"use strict";return{statusText(t){const e=this.getOwnerComponent().getModel("i18n").getResourceBundle();switch(t){case"A":return e.getText("invoiceStatusA");case"B":return e.getText("invoiceStatusB");case"C":return e.getText("invoiceStatusC");default:return t}},returnText(t){return t+"Formatted"}}});
+//# sourceMappingURL=formatter.js.map
