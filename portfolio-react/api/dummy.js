@@ -1,5 +1,5 @@
 // api/products.js
-import fetch from "node-fetch";
+// import fetch from "node-fetch";
 
 // Base URL for DummyJSON
 const BASE_URL = "https://dummyjson.com/products";
