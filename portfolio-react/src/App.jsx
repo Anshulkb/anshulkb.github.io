@@ -1,10 +1,11 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
 import Header from "./components/Header";
 import ProjectCard from "./components/ProjectCard";
 import Footer from "./components/Footer";
+// import GetProducts from './components/GetProducts';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -12,7 +13,7 @@ function App() {
     {
       title: "SAP Fiori App",
       description: "UI5 app using DummyJSON API (proxy via Vercel).",
-      link: "/projects/fiori-app/index.html"
+      link: "/projects/fiori/index.html"
     },
     {
       title: "React Demo App",
@@ -38,6 +39,7 @@ function App() {
             />
           ))}
         </div>
+        {/* <GetProducts></GetProducts> */}
       </section>
       <Footer></Footer>
     </>
