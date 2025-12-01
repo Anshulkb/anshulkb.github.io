@@ -1,107 +1,116 @@
-// users.js
-// Simple API wrapper for https://dummyjson.com/users
-
 const BASE_URL = "https://dummyjson.com/users";
 
-/**
- * Fetch all users
- * @returns {Promise<Array>} list of users
- */
-export async function getUsers() {
-  const res = await fetch(BASE_URL);
-  if (!res.ok) {
-    throw new Error("Failed to fetch users");
-  }
+/* ------------------- BASIC OPERATIONS ------------------- */
 
-  const data = await res.json();
-  return data.users; // API returns { users: [...] }
+async function getAllUsers() {
+  const response = await fetch(`${BASE_URL}`);
+  const data = await response.json();
+  return data;
 }
 
-/**
- * Fetch user by ID
- * @param {number} id
- * @returns {Promise<Object>} user object
- */
-export async function getUserById(id) {
-  const res = await fetch(`${BASE_URL}/${id}`);
-  if (!res.ok) {
-    throw new Error("User not found");
-  }
-
-  return await res.json();
+async function getUserById(id) {
+  const response = await fetch(`${BASE_URL}/${id}`);
+  const data = await response.json();
+  return data;
 }
 
-/**
- * Search users by keyword (server-side)
- * @param {string} query
- * @returns {Promise<Array>} matched users
- */
-export async function searchUsers(query) {
-  const res = await fetch(`${BASE_URL}/search?q=${encodeURIComponent(query)}`);
-  if (!res.ok) {
-    throw new Error("Search failed");
-  }
-
-  const data = await res.json();
-  return data.users;
+async function searchUsers(query) {
+  const response = await fetch(`${BASE_URL}/search?q=${query}`);
+  const data = await response.json();
+  return data;
 }
 
-/**
- * Add a user (fake API will return the created object)
- * @param {Object} user
- * @returns {Promise<Object>}
- */
-export async function addUser(user) {
-  const res = await fetch(BASE_URL + "/add", {
+/* ------------------- MODIFY OPERATIONS ------------------- */
+
+async function addUser(userData) {
+  const response = await fetch(`${BASE_URL}/add`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(user),
+    body: JSON.stringify(userData),
   });
 
-  if (!res.ok) {
-    throw new Error("Failed to add user");
-  }
-
-  return await res.json();
+  const data = await response.json();
+  return data;
 }
 
-/**
- * Update a user
- * @param {number} id
- * @param {Object} user
- * @returns {Promise<Object>}
- */
-export async function updateUser(id, user) {
-  const res = await fetch(`${BASE_URL}/${id}`, {
+async function updateUser(id, userData) {
+  const response = await fetch(`${BASE_URL}/${id}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(user),
+    body: JSON.stringify(userData),
   });
 
-  if (!res.ok) {
-    throw new Error("Failed to update user");
-  }
-
-  return await res.json();
+  const data = await response.json();
+  return data;
 }
 
-/**
- * Delete a user
- * @param {number} id
- * @returns {Promise<Object>}
- */
-export async function deleteUser(id) {
-  const res = await fetch(`${BASE_URL}/${id}`, {
+async function deleteUser(id) {
+  const response = await fetch(`${BASE_URL}/${id}`, {
     method: "DELETE",
   });
 
-  if (!res.ok) {
-    throw new Error("Failed to delete user");
-  }
+  const data = await response.json();
+  return data;
+}
 
-  return await res.json();
+/* ------------------- API HANDLER ------------------- */
+
+export default async function handler(req, res) {
+  const { id, search } = req.query;
+  const method = req.method;
+
+  try {
+    let result;
+
+    /* ---------- GET Requests ---------- */
+    if (method === "GET") {
+      if (id) {
+        result = await getUserById(id);
+      } else if (search) {
+        result = await searchUsers(search);
+      } else {
+        result = await getAllUsers();
+      }
+
+      return res.status(200).json(result);
+    }
+
+    /* ---------- POST: Add User ---------- */
+    if (method === "POST") {
+      result = await addUser(req.body);
+      return res.status(201).json(result);
+    }
+
+    /* ---------- PUT: Update User ---------- */
+    if (method === "PUT") {
+      if (!id) {
+        return res
+          .status(400)
+          .json({ error: "User ID is required for update." });
+      }
+      result = await updateUser(id, req.body);
+      return res.status(200).json(result);
+    }
+
+    /* ---------- DELETE: Delete User ---------- */
+    if (method === "DELETE") {
+      if (!id) {
+        return res
+          .status(400)
+          .json({ error: "User ID is required for delete." });
+      }
+      result = await deleteUser(id);
+      return res.status(200).json(result);
+    }
+
+    /* ---------- Unsupported Method ---------- */
+    return res.status(405).json({ error: "Method Not Allowed" });
+  } catch (err) {
+    console.error("User API error:", err);
+    res.status(500).json({ error: "Failed to process request" });
+  }
 }
