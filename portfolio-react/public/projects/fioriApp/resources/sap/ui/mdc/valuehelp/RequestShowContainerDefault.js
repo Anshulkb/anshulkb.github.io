@@ -1,7 +1,0 @@
-/*!
- * OpenUI5
- * (c) Copyright 2025 SAP SE or an SAP affiliate company.
- * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
- */
-sap.ui.define(["sap/ui/Device"],e=>{"use strict";const t={};t.Tap=async function(t,n){if(this.shouldOpenOnClick){return await this.shouldOpenOnClick(t,n)}if(e.system.phone&&(!n.isSingleSelect()||!n.isDialog())){return true}const[i]=n?.getContent()||[];return!!i&&i.isA("sap.ui.mdc.valuehelp.content.FixedList")&&(i.isRestrictedToFixedValues()||!i.getFilterList())};t.Typing=async function(t,n){await t.retrieveDelegateContent(n);if(e.system.phone&&(n.isSingleSelect()||n.isDialog())){return false}const[i]=n?.getContent()||[];return!!await(i?.isSearchSupported())};t.Filter=async function(t,n){const[i]=n?.getContent()||[];if(this.showTypeahead){return await this.showTypeahead(t,i)}if(!e.system.phone){if(i?.isA("sap.ui.mdc.valuehelp.base.FilterableListContent")&&!t.getFilterValue()){return false}if(i?.isA("sap.ui.mdc.valuehelp.base.ListContent")){return i.getListBinding()?.getCurrentContexts().length>0}}return!!i};t.Focus=async function(e,t){if(this.shouldOpenOnFocus){return await this.shouldOpenOnFocus(e,t)}return false};t.Navigate=async function(e,t){await e.retrieveDelegateContent(t);if(this.shouldOpenOnNavigate){return await this.shouldOpenOnNavigate(e,t)}return false};t.ValueHelpRequest=function(e,t){return t.isDialog()};return t});
-//# sourceMappingURL=RequestShowContainerDefault.js.map

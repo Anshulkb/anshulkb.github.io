@@ -1,7 +1,0 @@
-/*
- * OpenUI5
- * (c) Copyright 2025 SAP SE or an SAP affiliate company.
- * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
- */
-sap.ui.define(["./ODataV4MultiLevel","./PluginBase","../utils/TableUtils"],function(e,t,o){"use strict";const i=e.extend("sap.ui.table.plugins.ODataV4Hierarchy",{metadata:{library:"sap.ui.table",properties:{enabled:{type:"boolean",defaultValue:true}}}});i.findOn=t.findOn;i.prototype.onActivate=function(t){e.prototype.onActivate.apply(this,arguments);n.call(this);o.Grouping.setHierarchyMode(t,o.Grouping.HierarchyMode.Tree);o.Hook.register(t,o.Hook.Keys.Row.UpdateState,a,this);o.Hook.register(t,o.Hook.Keys.Table.RefreshRows,n,this)};i.prototype.onDeactivate=function(t){e.prototype.onDeactivate.apply(this,arguments);o.Hook.deregister(t,o.Hook.Keys.Row.UpdateState,a,this);o.Hook.deregister(t,o.Hook.Keys.Table.RefreshRows,n,this)};function n(){const e=this.getControl()?.getBinding();const t=e?.getAggregation();if(e&&(!t||!("hierarchyQualifier"in t))){throw new Error("Only data aggregation is supported")}}function a(e){const t=e.context.getProperty("@$ui5.node.isExpanded");const o=t!==undefined;e.level=e.context.getProperty("@$ui5.node.level")??1;e.expandable=o;e.expanded=t}return i});
-//# sourceMappingURL=ODataV4Hierarchy.js.map

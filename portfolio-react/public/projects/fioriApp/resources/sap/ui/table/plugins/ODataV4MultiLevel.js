@@ -1,7 +1,0 @@
-/*
- * OpenUI5
- * (c) Copyright 2025 SAP SE or an SAP affiliate company.
- * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
- */
-sap.ui.define(["./PluginBase","../utils/TableUtils"],function(e,t){"use strict";const o=e.extend("sap.ui.table.plugins.ODataV4MultiLevel",{metadata:{abstract:true,library:"sap.ui.table"}});o.findOn=e.findOn;o.prototype.isApplicable=function(t){return e.prototype.isApplicable.apply(this,arguments)&&t.getMetadata().getName()==="sap.ui.table.Table"};o.prototype.onActivate=function(o){e.prototype.onActivate.apply(this,arguments);i(o.getBinding());t.Hook.register(o,t.Hook.Keys.Table.RowsBound,i);t.Hook.register(o,t.Hook.Keys.Row.Expand,a,this);t.Hook.register(o,t.Hook.Keys.Row.Collapse,n,this)};o.prototype.onDeactivate=function(o){e.prototype.onDeactivate.apply(this,arguments);t.Hook.deregister(o,t.Hook.Keys.Table.RowsBound,i);t.Hook.deregister(o,t.Hook.Keys.Row.Expand,a,this);t.Hook.deregister(o,t.Hook.Keys.Row.Collapse,n,this);t.Grouping.setHierarchyMode(o,t.Grouping.HierarchyMode.Flat)};function i(e){if(!e){return}if(!e.getModel().isA("sap.ui.model.odata.v4.ODataModel")){throw new Error("Model must be sap.ui.model.odata.v4.ODataModel")}}function a(e){const o=t.getBindingContextOfRow(e);if(o){o.expand()}}function n(e){const o=t.getBindingContextOfRow(e);if(o){o.collapse()}}return o});
-//# sourceMappingURL=ODataV4MultiLevel.js.map

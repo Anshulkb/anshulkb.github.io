@@ -13,7 +13,7 @@ function App() {
     {
       title: "SAP Fiori App",
       description: "UI5 app using DummyJSON API (proxy via Vercel).",
-      link: "/projects/dist/index.html"
+      link: "/projects/fioriApp/index.html"
     },
     {
       title: "React Demo App",

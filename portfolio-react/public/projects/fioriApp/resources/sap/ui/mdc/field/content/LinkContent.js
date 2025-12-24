@@ -1,7 +1,0 @@
-/*!
- * OpenUI5
- * (c) Copyright 2025 SAP SE or an SAP affiliate company.
- * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
- */
-sap.ui.define(["sap/m/library"],t=>{"use strict";const{EmptyIndicatorMode:e}=t;const n=new WeakMap;const i={getDisplay:function(){return["sap/m/Link"]},getDisplayMultiValue:function(){return[null]},getDisplayMultiLine:function(){return["sap/m/Link"]},getEditSelect:function(){return[null]},getUseDefaultValueHelp:function(){return false},createDisplay:function(t,n,i){const l=n[0];const o=t.getConditionsType();const r=new l(i,{text:{path:"$field>/conditions",type:o},textAlign:"{$field>/textAlign}",textDirection:"{$field>/textDirection}",tooltip:"{$field>/tooltip}",press:t.getHandleContentPress(),wrapping:"{$field>/multipleLines}",emptyIndicatorMode:e.Auto});const a=t.getField().getFieldInfo();if(a){a.getDirectLinkHrefAndTarget().then(e=>{t.getMetadata()._oClass._updateLink(r,e)})}t.setAriaLabelledBy(r);return[r]},createDisplayMultiValue:function(){throw new Error("sap.ui.mdc.field.content.LinkContent - createDisplayMultiValue not defined!")},createDisplayMultiLine:function(t,e,n){return this.createDisplay(t,e,n)},createEditSelect:function(){throw new Error("sap.ui.mdc.field.content.LinkContent - createEditSelect not defined!")}};const l={extendBaseContent:function(t){let e=n.get(t);if(!e){const l=Object.assign({},t);e=Object.assign(l,i);n.set(t,e)}return e}};return l});
-//# sourceMappingURL=LinkContent.js.map
