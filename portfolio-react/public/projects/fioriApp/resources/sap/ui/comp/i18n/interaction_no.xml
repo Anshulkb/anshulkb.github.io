@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF8"?>
+<interaction-documentation library="sap.ui.comp" xmlns="http://schemas.sap.com/sapui5/extension/sap.ui.core.InteractionDocumentation/1">
+	<control-interactions>
+		<control name="sap.ui.comp.smarttable.SmartTable"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Åpner dialogen <span class="uicontrol">Tabellinnstillinger</span>, hvis den er tilgjengelig.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Ctrl + Shift + E</kbd> <description>
+				<p>Åpner dialogen <span class="uicontrol">Eksporter som</span> i tabellen, hvis den er tilgjengelig.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfilterbar.SmartFilterbar"/>
+		<interaction> <kbd>Enter</kbd> <description>
+				<p>Utløser søk for <span class="uicontrol">Smart-filterlinjen</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Flytter fokuset til det neste interaktive elementet i tabulatorrekkefølgen. </p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Flytter fokuset til det foregående interaktive elementet i tabulatorrekkefølgen. </p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Flytter fokuset til det første interaktive elementet utenfor kontrollen i den neste UI-gruppen (F6-gruppe).</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Flytter fokuset til det første interaktive elementet utenfor kontrollen i den foregående UI-gruppen (F6-gruppe).</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartform.SmartForm"/>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Flytter fokuset til det neste interaktive elementet i tabulatorrekkefølgen. </p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Flytter fokuset til det foregående interaktive elementet i tabulatorrekkefølgen. </p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Flytter fokuset til det første interaktive elementet i den neste UI-gruppen (F6-gruppe) i tabulatorrekkefølgen. </p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Flytter fokuset til det første interaktive elementet i den foregående UI-gruppen (F6-gruppe) i tabulatorrekkefølgen. </p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfield.SmartField"/>
+		<interaction> <kbd>F4</kbd> <description>
+				<p>Åpner/lukker rullegardinlisten eller komprimerbare områder i dialogen <span class="uicontrol">Mulige verdier</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.valuehelpdialog.ValueHelpDialog"/>
+		<interaction> <kbd>Esc</kbd> <description>
+				<p>Avbryter og lukker <span class="uicontrol">dialogen Mulige verdier</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Flytter fokuset til det neste interaktive elementet i <span class="uicontrol">dialogen Mulige verdier</span>. Hvis det siste elementet har fokus, flyttes fokuset til det første interaktive elementet i <span class="uicontrol">dialogen Mulige verdier</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Flytter fokuset til det foregående interaktive elementet i <span class="uicontrol">dialogen Mulige verdier</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.SmartChart"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Åpne dialogen <span class="uicontrol">Visningsinnstillinger</span></p>
+			</description>
+		</interaction>
+	</control-interactions>
+</interaction-documentation>

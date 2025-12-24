@@ -1,0 +1,7 @@
+/*!
+ * OpenUI5
+ * (c) Copyright 2025 SAP SE or an SAP affiliate company.
+ * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+ */
+sap.ui.define(["sap/base/util/restricted/_omit","sap/ui/core/Component","sap/ui/fl/apply/_internal/changes/Applier","sap/ui/fl/apply/_internal/flexObjects/FlexObjectFactory","sap/ui/fl/apply/_internal/flexObjects/States","sap/ui/fl/apply/_internal/flexState/changes/DependencyHandler","sap/ui/fl/apply/_internal/flexState/FlexObjectState","sap/ui/fl/apply/_internal/flexState/FlexState","sap/ui/fl/write/_internal/flexState/FlexObjectManager"],function(e,t,n,a,l,i,r,s,p){"use strict";const c={};function o(e,a,l){i.addRuntimeChangeToMap(a,l,r.getLiveDependencyMap(e));if(l instanceof t){const t=l.getPropagationListeners().every(e=>!e._bIsFlexApplyChangesFunction);if(t){const t=n.applyAllChangesForControl.bind(n,l,e);t._bIsFlexApplyChangesFunction=true;l.addPropagationListener(t)}}}function f(e){return typeof e.isA==="function"&&e.isA("sap.ui.fl.apply._internal.flexObjects.FlexObject")?e:a.createFromFileContent(e)}c.addDirtyChanges=function(e,t,n){const a=s.addDirtyFlexObjects(e,t.map(f));a.forEach(t=>{o(e,t,n)});return a};c.restoreDeletedChanges=function(e,t,n){p.restoreDeletedFlexObjects({reference:e,flexObjects:t});const a=t.filter(e=>e.getState()!==l.LifecycleState.PERSISTED);a.forEach(t=>{o(e,t,n)})};return c});
+//# sourceMappingURL=UIChangeManager.js.map

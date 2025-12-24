@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF8"?>
+<interaction-documentation library="sap.ui.comp" xmlns="http://schemas.sap.com/sapui5/extension/sap.ui.core.InteractionDocumentation/1">
+	<control-interactions>
+		<control name="sap.ui.comp.smarttable.SmartTable"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Отваря диалоговия прозорец <span class="uicontrol">Таблични настройки</span>, ако е налично.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Ctrl + Shift + E</kbd> <description>
+				<p>Отваря диалоговия прозорец на таблицата <span class="uicontrol">Експорт като</span>, ако е налично.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfilterbar.SmartFilterbar"/>
+		<interaction> <kbd>Enter</kbd> <description>
+				<p>Инициира търсенето за <span class="uicontrol">Интелигентната лента за филтриране</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Премества фокуса към следващия интерактивен елемент във веригата от табове.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Премества фокуса към предходния интерактивен елемент във веригата от табове.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Премества фокуса към първия интерактивен елемент извън контролата в следващата UI група (групата F6).</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Премества фокуса към първия интерактивен елемент извън контролата в прехдодната UI група (групата F6).</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartform.SmartForm"/>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Премества фокуса към следващия интерактивен елемент във веригата от табове.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Премества фокуса към предходния интерактивен елемент във веригата от табове.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Премества фокуса към първия интерактивен елемент на следващата UI група (групата F6) във веригата от табове.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Премества фокуса към първия интерактивен елемент на предходната UI група (групата F6) във веригата от табове.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfield.SmartField"/>
+		<interaction> <kbd>F4</kbd> <description>
+				<p>Отваря/затваря падащия списък или областите с възможност за скриване на <span class="uicontrol">диалоговия прозорец за помощ при въвеждане на стойности</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.valuehelpdialog.ValueHelpDialog"/>
+		<interaction> <kbd>Esc</kbd> <description>
+				<p>Отказва и затваря <span class="uicontrol">диалоговия прозорец за помощ за стойности.</span></p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Премества фокуса към следващия интерактивен елемент в <span class="uicontrol">диалоговия прозорец за помощ за стойности</span>. Ако последният елемент е на фокус, фокусът се премества към първия интерактивен елемент в <span class="uicontrol">диалоговия прозорец за помощ за стойности</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Премества фокуса към предходния интерактивен елемент в <span class="uicontrol">диалоговия прозорец за помощ за стойности</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.SmartChart"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Отваря диалоговия прозорец <span class="uicontrol">Преглед на настройките</span></p>
+			</description>
+		</interaction>
+	</control-interactions>
+</interaction-documentation>

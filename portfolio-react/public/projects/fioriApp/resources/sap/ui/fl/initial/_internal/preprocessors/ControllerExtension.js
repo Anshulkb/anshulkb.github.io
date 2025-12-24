@@ -1,0 +1,7 @@
+/*!
+ * OpenUI5
+ * (c) Copyright 2025 SAP SE or an SAP affiliate company.
+ * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+ */
+sap.ui.define(["sap/base/Log","sap/ui/core/Component","sap/ui/fl/initial/_internal/Loader","sap/ui/fl/initial/_internal/ManifestUtils","sap/ui/fl/initial/_internal/StorageUtils","sap/ui/fl/requireAsync","sap/ui/fl/Utils"],function(e,t,n,r,i,o,a){"use strict";var l=function(){};function u(e){return e.getChangeType()==="codeExt"}function s(e){if(!e.startsWith("module:")){return`module:${e.replace(/\./g,"/")}.controller`}return e}function c(e,t){var n=s(t.getSelector().controllerName);return n===s(e)}function f(t){return new Promise(function(n){sap.ui.require(t,function(...e){n(e)},function(t){e.error("Code Extension not found",t.message);n([])})})}l.prototype.getControllerExtensions=function(e,l,s){if(s){if(!l){return Promise.resolve([])}var p=t.getComponentById(l);var g=a.getAppComponentForControl(p);if(!g){return Promise.resolve([])}if(!a.isApplication(g.getManifestObject())){return Promise.resolve([])}var m=r.getFlexReferenceForControl(g);return n.waitForInitialization(m).then(async function(){const t=n.getCachedFlexData(m);if(!i.isStorageResponseFilled(t?.changes)){return[]}const r=await o("sap/ui/fl/apply/_internal/flexState/FlexState");await r.waitForInitialization(m);const a=r.getFlexObjectsDataSelector().get({reference:m});var l=a.filter(function(t){return u(t)&&c(e,t)}).map(function(e){return e.getModuleName()});return f(l)})}return[]};return l});
+//# sourceMappingURL=ControllerExtension.js.map

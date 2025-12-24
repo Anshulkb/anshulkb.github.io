@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF8"?>
+<interaction-documentation library="sap.ui.comp" xmlns="http://schemas.sap.com/sapui5/extension/sap.ui.core.InteractionDocumentation/1">
+	<control-interactions>
+		<control name="sap.ui.comp.smarttable.SmartTable"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Se abre el diálogo <span class="uicontrol">Opciones de tabla</span>, si está disponible.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Ctrl + Shift + E</kbd> <description>
+				<p>Se abre el diálogo <span class="uicontrol">Exportar como</span> de la tabla, si está disponible.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfilterbar.SmartFilterbar"/>
+		<interaction> <kbd>Enter</kbd> <description>
+				<p>Inicia la búsqueda para la <span class="uicontrol">barra de filtros inteligente</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Desplaza el foco al siguiente elemento interactivo de la cadena de pestañas.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Desplaza el foco al elemento interactivo anterior de la cadena de pestañas.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Desplaza el foco al primer elemento interactivo que hay fuera del control en el siguiente grupo de IU (grupo F6).</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Desplaza el foco al primer elemento interactivo que hay fuera del control en el grupo de IU anterior (grupo F6).</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartform.SmartForm"/>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Desplaza el foco al siguiente elemento interactivo de la cadena de pestañas.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Desplaza el foco al elemento interactivo anterior de la cadena de pestañas.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Desplaza el foco al primer elemento interactivo del siguiente grupo de IU (grupo F6) de la cadena de pestañas.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Desplaza el foco al primer elemento interactivo del grupo de IU anterior (grupo F6) de la cadena de pestañas.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfield.SmartField"/>
+		<interaction> <kbd>F4</kbd> <description>
+				<p>Abre/cierra la lista desplegable o las áreas comprimibles del <span class="uicontrol">diálogo de la ayuda para entradas</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.valuehelpdialog.ValueHelpDialog"/>
+		<interaction> <kbd>Esc</kbd> <description>
+				<p>Cancela y cierra el <span class="uicontrol">diálogo de la ayuda para entradas.</span></p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Desplaza el foco al siguiente elemento interactivo que hay dentro del <span class="uicontrol">diálogo de la ayuda para entradas</span>. Si el foco está en el último elemento, se desplazará al primer elemento interactivo que haya dentro del <span class="uicontrol">diálogo de la ayuda para entradas</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Desplaza el foco al elemento interactivo anterior del <span class="uicontrol">diálogo de la ayuda para entradas</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.SmartChart"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Abre el diálogo <span class="uicontrol">Ver parametrizaciones</span></p>
+			</description>
+		</interaction>
+	</control-interactions>
+</interaction-documentation>

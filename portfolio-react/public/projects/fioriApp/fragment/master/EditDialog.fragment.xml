@@ -1,0 +1,156 @@
+<core:FragmentDefinition
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Dialog
+        showHeader="true"
+        title="{oMasterModel>/sDialogTitle}"
+        contentWidth="50%"
+        titleAlignment="Center"
+    >
+        <f:SimpleForm
+            editable="true"
+            layout="ResponsiveGridLayout"
+            labelSpanXL="3"
+            labelSpanL="3"
+            labelSpanM="3"
+            labelSpanS="12"
+            adjustLabelSpan="false"
+            emptySpanXL="2"
+            emptySpanL="2"
+            emptySpanM="2"
+            emptySpanS="0"
+            columnsXL="1"
+            columnsL="1"
+            columnsM="1"
+            singleContainerFullSize="false"
+            visible="{=${oMasterModel>/sSelKey}==='E'}"
+        >
+            <f:content>
+                <Label text="{i18n>name}" />
+                <Input value="{oMasterModel>/oSelItem/Name}" />
+                <Label text="{i18n>age}" />
+                <Input value="{oMasterModel>/oSelItem/Age}" />
+                <Label text="{i18n>gender}" />
+                <Input value="{oMasterModel>/oSelItem/Gender}" />
+                <Label text="{i18n>email}" />
+                <Input value="{oMasterModel>/oSelItem/Email}" />
+                <Label text="{i18n>phNo}" />
+                <Input value="{oMasterModel>/oSelItem/Phone Number}" />
+                <Label text="{i18n>dob}" />
+                <Input value="{oMasterModel>/oSelItem/Date of Birth}" />
+                <Label text="{i18n>bloodGrp}" />
+                <Input value="{oMasterModel>/oSelItem/Blood Group}" />
+                <Label text="{i18n>address}" />
+                <TextArea
+                    value="{oMasterModel>/oSelItem/Address}"
+                    growing="true"
+                    growingMaxLines="4"
+                />
+                <Label text="{i18n>country}" />
+                <Input value="{oMasterModel>/oSelItem/Country}" />
+                <Label text="{i18n>ssn}" />
+                <Input value="{oMasterModel>/oSelItem/SSN}" />
+                <Label text="{i18n>role}" />
+                <Input value="{oMasterModel>/oSelItem/Role}" />
+                <Label text="{i18n>designation}" />
+                <Input value="{oMasterModel>/oSelItem/Designation}" />
+                <Label text="{i18n>department}" />
+                <Input value="{oMasterModel>/oSelItem/Department}" />
+                <Label text="{i18n>company}" />
+                <Input value="{oMasterModel>/oSelItem/Company}" />
+                <Label text="{i18n>company} {i18n>address}" />
+                <TextArea
+                    value="{oMasterModel>/oSelItem/Company Address}"
+                    growing="true"
+                    growingMaxLines="4"
+                />
+            </f:content>
+        </f:SimpleForm>
+        <f:SimpleForm
+            editable="true"
+            layout="ResponsiveGridLayout"
+            labelSpanXL="3"
+            labelSpanL="3"
+            labelSpanM="3"
+            labelSpanS="12"
+            adjustLabelSpan="false"
+            emptySpanXL="2"
+            emptySpanL="2"
+            emptySpanM="2"
+            emptySpanS="0"
+            columnsXL="1"
+            columnsL="1"
+            columnsM="1"
+            singleContainerFullSize="false"
+            visible="{=${oMasterModel>/sSelKey}==='P'}"
+        >
+            <f:content>
+                <Label text="{i18n>product} {i18n>name}" />
+                <Input value="{oMasterModel>/oSelItem/Product Name}" />
+                <Label text="{i18n>desc}" />
+                <TextArea
+                    value="{oMasterModel>/oSelItem/Description}"
+                    growing="true"
+                    growingMaxLines="4"
+                />
+                <Label text="{i18n>brand}" />
+                <Input value="{oMasterModel>/oSelItem/Brand}" />
+                <Label text="{i18n>category}" />
+                <Input value="{oMasterModel>/oSelItem/Category}" />
+                <Label text="{i18n>price}" />
+                <Input value="{oMasterModel>/oSelItem/Price}" />
+                <Label text="{i18n>discount}" />
+                <Input value="{oMasterModel>/oSelItem/Discount}" />
+                <Label text="{i18n>rating}" />
+                <Input value="{oMasterModel>/oSelItem/Rating}" />
+                <Label text="{i18n>stock}" />
+                <Input value="{oMasterModel>/oSelItem/Stock}" />
+                <Label text="{i18n>tags}" />
+                <Input value="{oMasterModel>/oSelItem/Tags}" />
+                <Label text="{i18n>sku}" />
+                <Input value="{oMasterModel>/oSelItem/Stock keeping unit}" />
+                <Label text="{i18n>weight}" />
+                <Input value="{oMasterModel>/oSelItem/Weight}" />
+                <Label text="{i18n>dimension} (WxHxD)" />
+                <Input value="{oMasterModel>/oSelItem/Dimensions (WxHxD)}" />
+                <Label text="{i18n>warrDet}" />
+                <TextArea
+                    value="{oMasterModel>/oSelItem/Warranty Details}"
+                    growing="true"
+                    growingMaxLines="4"
+                />
+                <Label text="{i18n>shipinfo}" />
+                <TextArea
+                    value="{oMasterModel>/oSelItem/Shipping Information}"
+                    growing="true"
+                    growingMaxLines="4"
+                />
+                <Label text="{i18n>availability}" />
+                <Input value="{oMasterModel>/oSelItem/Availability}" />
+                <Label text="{i18n>returnPolicy}" />
+                <TextArea
+                    value="{oMasterModel>/oSelItem/Return Policy}"
+                    growing="true"
+                    growingMaxLines="4"
+                />
+                <Label text="{i18n>moq1}" />
+                <Input
+                    value="{oMasterModel>/oSelItem/Minimum Order Quantity}"
+                />
+            </f:content>
+        </f:SimpleForm>
+        <buttons>
+            <Button
+                text="{i18n>save}"
+                type="Emphasized"
+                press="onSaveEditDialog"
+            />
+            <Button
+                text="{i18n>cancel}"
+                press="onCloseEditDialog"
+            />
+        </buttons>
+    </Dialog>
+</core:FragmentDefinition>

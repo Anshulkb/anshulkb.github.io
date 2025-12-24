@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF8"?>
+<interaction-documentation library="sap.ui.comp" xmlns="http://schemas.sap.com/sapui5/extension/sap.ui.core.InteractionDocumentation/1">
+	<control-interactions>
+		<control name="sap.ui.comp.smarttable.SmartTable"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Öppnar dialogen <span class="uicontrol">Inställningar för tabell</span> om den är tillgänglig.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Ctrl + Shift + E</kbd> <description>
+				<p>Öppnar dialogen <span class="uicontrol">Exportera som</span> för tabellen om den är tillgänglig.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfilterbar.SmartFilterbar"/>
+		<interaction> <kbd>Enter</kbd> <description>
+				<p>Initierar sökningen för <span class="uicontrol">Smart filterfält</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Flyttar fokus till nästa interaktiva element i tabulatorföljden.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Flyttar fokus till föregående interaktiva element i tabulatorföljden.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Flyttar fokus till första interaktiva elementet utanför åtkomsten i nästa UI-grupp (F6-grupp).</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Flyttar fokus till första interaktiva elementet utanför åtkomsten i föregående UI-grupp (F6-grupp).</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartform.SmartForm"/>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Flyttar fokus till nästa interaktiva element i tabulatorföljden.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Flyttar fokus till föregående interaktiva element i tabulatorföljden.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Flyttar fokus till första interaktiva elementet i nästa UI-grupp (F6-grupp) i tabulatorföljden.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Flyttar fokus till första interaktiva elementet i föregående UI-grupp (F6-grupp) i tabulatorföljden.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfield.SmartField"/>
+		<interaction> <kbd>F4</kbd> <description>
+				<p>Öppnar/stänger listrutan eller komprimerbara områden för <span class="uicontrol">F4-hjälpdialogen</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.valuehelpdialog.ValueHelpDialog"/>
+		<interaction> <kbd>Esc</kbd> <description>
+				<p>Avbryter och stänger <span class="uicontrol">F4-hjälpdialogen.</span></p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Flyttar fokus till nästa interaktiva element i <span class="uicontrol">F4-hjälpdialogen</span>. Om sista elementet är i fokus flyttas fokus till första interaktiva elementet i <span class="uicontrol">F4-hjälpdialogen</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Flyttar fokus till föregående interaktiva element i <span class="uicontrol">F4-hjälpdialogen</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.SmartChart"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Öppna dialogen <span class="uicontrol">Vyinställningar</span></p>
+			</description>
+		</interaction>
+	</control-interactions>
+</interaction-documentation>

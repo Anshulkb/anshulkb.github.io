@@ -1,0 +1,6 @@
+/*!
+ * SAPUI5
+ * (c) Copyright 2025 SAP SE. All rights reserved.
+ */
+sap.ui.define(["sap/ui/comp/util/FormatUtil","sap/ui/base/ManagedObject","sap/m/Token"],function(t,e,i){"use strict";var s=function(){this.items={}};s.prototype.add=function(t,e){this.items[t]=e};s.prototype.remove=function(t){delete this.items[t]};s.prototype.removeAll=function(){this.items={}};s.prototype.getItem=function(t){return this.items[t]};s.prototype.getItems=function(){var t=[];for(var e in this.items){t.push(e)}return t};s.prototype.getSelectedItemsTokenArray=function(s,o,r,n){var a=[];for(var p in this.items){var f=this.items[p];var u,m;if(typeof f==="string"){m=p;u=f}else{m=f[s];u=f[o];if(u===undefined){u=this.items[p];if(typeof u!=="string"){if(n){u=n.format(f[s])}else{u=m}}}else{if(!r){r="descriptionAndId"}u=t.getFormattedExpressionFromDisplayBehaviour(r,m,u)}}var c=new i({key:e.escapeSettingsValue(m)});c.setText(u);c.setTooltip(typeof u==="string"?u:"");if(typeof f!=="string"){c.data("row",f);c.data("longKey",e.escapeSettingsValue(p));p=t._extractCompositeKey(p);if(p){c.data("compositeKey",e.escapeSettingsValue(p))}}a.push(c)}return a};s.prototype.getModelData=function(){var t=[];for(var e in this.items){var i=this.items[e];if(typeof i==="string"){i={missing:e}}t.push(i)}return t};return s},true);
+//# sourceMappingURL=ItemsCollection.js.map

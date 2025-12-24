@@ -1,0 +1,140 @@
+<core:FragmentDefinition
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:l="sap.ui.layout"
+>
+    <VBox visible="{=${detailsModel>/isEditing}===false}">
+        <f:SimpleForm
+            editable="false"
+            layout="ResponsiveGridLayout"
+            labelSpanXL="4"
+            labelSpanL="3"
+            labelSpanM="4"
+            labelSpanS="12"
+            adjustLabelSpan="false"
+            emptySpanXL="0"
+            emptySpanL="4"
+            emptySpanM="0"
+            emptySpanS="0"
+            columnsXL="2"
+            columnsL="1"
+            columnsM="1"
+            singleContainerFullSize="false"
+        >
+            <f:content>
+                <Label text="{i18n>department}" />
+                <Text text="{detailsModel>/details/company/department}" />
+                <Label text="{i18n>organization}" />
+                <Text text="{detailsModel>/details/company/name}" />
+                <Label text="{i18n>street}" />
+                <Text text="{detailsModel>/details/company/address/address}" />
+                <Label text="{i18n>city}" />
+                <Text text="{detailsModel>/details/company/address/city}" />
+                <Label text="{i18n>state}" />
+                <Text
+                    text="{detailsModel>/details/company/address/state} {detailsModel>/details/company/address/stateCode}"
+                />
+                <Label text="{i18n>postCode}" />
+                <Text
+                    text="{detailsModel>/details/company/address/postalCode}"
+                />
+            </f:content>
+        </f:SimpleForm>
+    </VBox>
+
+    <VBox visible="{detailsModel>/isEditing}">
+        <f:SimpleForm
+            editable="true"
+            layout="ResponsiveGridLayout"
+            labelSpanXL="3"
+            labelSpanL="3"
+            labelSpanM="3"
+            labelSpanS="12"
+            adjustLabelSpan="false"
+            emptySpanXL="4"
+            emptySpanL="4"
+            emptySpanM="4"
+            emptySpanS="0"
+            columnsXL="1"
+            columnsL="1"
+            columnsM="1"
+            singleContainerFullSize="false"
+        >
+            <f:content>
+                <Label
+                    text="{i18n>department}"
+                    required="true"
+                />
+                <Input
+                    value="{detailsModel>/newDetails/company/department}"
+                    change="onValueChange"
+                    valueState="{path:'detailsModel>/newDetails/company/department', formatter:'.formatter.validateString'}"
+                    valueStateText="{path:'detailsModel>/newDetails/company/department', formatter:'.formatter.validateStringText'}"
+                />
+                <Label
+                    text="{i18n>organization}"
+                    required="true"
+                />
+                <Input
+                    value="{detailsModel>/newDetails/company/name}"
+                    change="onValueChange"
+                    valueState="{path:'detailsModel>/newDetails/company/name', formatter:'.formatter.validateString'}"
+                    valueStateText="{path:'detailsModel>/newDetails/company/name', formatter:'.formatter.validateStringText'}"
+                />
+                <Label
+                    text="{i18n>street}"
+                    required="true"
+                />
+                <Input
+                    value="{detailsModel>/newDetails/company/address/address}"
+                    change="onValueChange"
+                    valueState="{path:'detailsModel>/newDetails/company/address/address', formatter:'.formatter.validateString'}"
+                    valueStateText="{path:'detailsModel>/newDetails/company/address/address', formatter:'.formatter.validateStringText'}"
+                />
+                <Label
+                    text="{i18n>city}"
+                    required="true"
+                />
+                <Input
+                    value="{detailsModel>/newDetails/company/address/city}"
+                    change="onValueChange"
+                    valueState="{path:'detailsModel>/newDetails/company/address/city', formatter:'.formatter.validateString'}"
+                    valueStateText="{path:'detailsModel>/newDetails/company/address/city', formatter:'.formatter.validateStringText'}"
+                />
+                <Label
+                    text="{i18n>state}"
+                    required="true"
+                />
+                <Input
+                    value="{detailsModel>/newDetails/company/address/state}"
+                    change="onValueChange"
+                    valueState="{path:'detailsModel>/newDetails/company/address/state', formatter:'.formatter.validateString'}"
+                    valueStateText="{path:'detailsModel>/newDetails/company/address/state', formatter:'.formatter.validateStringText'}"
+                />
+                <Input
+                    value="{detailsModel>/newDetails/company/address/stateCode}"
+                    change="onValueChange"
+                    maxLength="2"
+                    valueState="{path:'detailsModel>/newDetails/company/address/stateCode', formatter:'.formatter.validateStateCode'}"
+                    valueStateText="{path:'detailsModel>/newDetails/company/address/stateCode', formatter:'.formatter.validateStateCodeText'}"
+                >
+                    <layoutData>
+                        <l:GridData span="XL1 L2 M2 S4" />
+                    </layoutData>
+                </Input>
+                <Label
+                    text="{i18n>postCode}"
+                    required="true"
+                />
+                <Input
+                    value="{detailsModel>/newDetails/company/address/postalCode}"
+                    change="onValueChange"
+                    type="Number"
+                    valueState="{path:'detailsModel>/newDetails/company/address/postalCode', formatter:'.formatter.validatePincode'}"
+                    valueStateText="{path:'detailsModel>/newDetails/company/address/postalCode', formatter:'.formatter.validatePincodeText'}"
+                />
+            </f:content>
+        </f:SimpleForm>
+    </VBox>
+</core:FragmentDefinition>

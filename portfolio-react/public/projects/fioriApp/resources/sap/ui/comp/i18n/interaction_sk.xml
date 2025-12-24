@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF8"?>
+<interaction-documentation library="sap.ui.comp" xmlns="http://schemas.sap.com/sapui5/extension/sap.ui.core.InteractionDocumentation/1">
+	<control-interactions>
+		<control name="sap.ui.comp.smarttable.SmartTable"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Otvorí dialógové okno <span class="uicontrol">Nastavenia tabuľky</span>, ak je k dispozícii.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Ctrl + Shift + E</kbd> <description>
+				<p>Otvorí dialógové okno <span class="uicontrol">Exportovať ako tabuľky</span>, ak je k dispozícii.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfilterbar.SmartFilterbar"/>
+		<interaction> <kbd>Enter</kbd> <description>
+				<p>Spustí vyhľadávanie <span class="uicontrol">lišty inteligentného filtra</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Presunie zameranie na ďalší interaktívny prvok v reťazci kariet.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Presunie zameranie na predchádzajúci interaktívny prvok v reťazci kariet.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Presunie zameranie na prvý interaktívny prvok mimo ovládacieho prvku v ďalšej skupine používateľského rozhrania (skupina F6).</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Presunie zameranie na prvý interaktívny prvok mimo ovládacieho prvku v predchádzajúcej skupine používateľského rozhrania (skupina F6).</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartform.SmartForm"/>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Presunie zameranie na ďalší interaktívny prvok v reťazci kariet.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Presunie zameranie na predchádzajúci interaktívny prvok v reťazci kariet.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Presunie zameranie na prvý interaktívny prvok ďalšej skupiny používateľského rozhrania (skupina F6) v reťazci kariet.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Presunie zameranie na prvý interaktívny prvok predchádzajúcej skupiny používateľského rozhrania (skupina F6) v reťazci kariet.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfield.SmartField"/>
+		<interaction> <kbd>F4</kbd> <description>
+				<p>Otvorí/zatvorí rozbaľovací zoznam alebo zbaliteľné oblasti dialógového <span class="uicontrol">okna nápovedy zadávania</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.valuehelpdialog.ValueHelpDialog"/>
+		<interaction> <kbd>Esc</kbd> <description>
+				<p>Zruší a zatvorí <span class="uicontrol">dialógové okno nápovedy zadávania.</span></p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Presunie zameranie na ďalší interaktívny prvok v <span class="uicontrol">dialógovom okne nápovedy</span>zadávania. Ak je zameraný posledný prvok, zameranie sa presunie na prvý interaktívny prvok v <span class="uicontrol">dialógovom okne nápovedy</span>zadávania.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Presunie zameranie na predchádzajúci interaktívny prvok v dialógovom <span class="uicontrol">okne nápovedy zadávania</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.SmartChart"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Otvorí dialógové okno <span class="uicontrol">Nastavenia zobrazenia</span></p>
+			</description>
+		</interaction>
+	</control-interactions>
+</interaction-documentation>

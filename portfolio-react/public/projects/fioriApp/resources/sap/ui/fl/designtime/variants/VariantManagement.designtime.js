@@ -1,0 +1,7 @@
+/*!
+ * OpenUI5
+ * (c) Copyright 2025 SAP SE or an SAP affiliate company.
+ * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+ */
+sap.ui.define(["sap/ui/core/Lib","sap/ui/fl/apply/api/ControlVariantApplyAPI","sap/ui/fl/Utils"],function(e,t,r){"use strict";async function a(e,a){var o=r.getAppComponentForControl(e);var n=e.getId();var i=o.getModel(t.getVariantModelName());var s=o.getLocalId(n)||n;if(!i){return}if(a){await e.waitForInit();i.setModelPropertiesForControl(s,a,e);i.checkUpdate(true)}else{i.setModelPropertiesForControl(s,a,e);i.checkUpdate(true)}}return{annotations:{},properties:{showSetAsDefault:{ignore:false},inErrorState:{ignore:false},editable:{ignore:false},modelName:{ignore:false},updateVariantInURL:{ignore:true},resetOnContextChange:{ignore:true},executeOnSelectionForStandardDefault:{ignore:false},displayTextForExecuteOnSelectionForStandardVariant:{ignore:false},headerLevel:{ignore:false}},variantRenameDomRef(e){return e.getTitle().getDomRef("inner")},customData:{},tool:{start(e){var t=true;a(e,t);e.enteringDesignMode()},stop(e){var t=false;a(e,t);e.leavingDesignMode()}},actions:{controlVariant(t){return{validators:["noEmptyText",{validatorFunction(e){return!t.getVariants().some(function(r){if(r.getKey()===t.getCurrentVariantKey()){return false}return e.toLowerCase()===r.getTitle().toLowerCase()&&r.getVisible()})},errorMessage:e.getResourceBundleFor("sap.m").getText("VARIANT_MANAGEMENT_ERROR_DUPLICATE")}]}}}}});
+//# sourceMappingURL=VariantManagement.designtime.js.map

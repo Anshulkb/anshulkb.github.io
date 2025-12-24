@@ -1,0 +1,7 @@
+/*!
+ * OpenUI5
+ * (c) Copyright 2025 SAP SE or an SAP affiliate company.
+ * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+ */
+sap.ui.define(["sap/ui/mdc/AggregationBaseDelegate","sap/ui/mdc/enums/GeomapControlPosition"],(e,n)=>{"use strict";const t=Object.assign({},e);t.zoomIn=function(e){};t.zoomOut=function(e){};t.getZoomLevel=function(e){};t.addItem=function(e,n,t,o){return Promise.resolve()};t.removeItem=function(e,n,t){return Promise.resolve(true)};t.insertItemToGeomap=function(e,n,t,o){};t.removeItemFromGeomap=function(e,n,t){};t.initializeGeomap=function(e){return Promise.reject()};t.createInitialGeomapContent=function(e){};t._getInnerGeomap=function(e){};t.getGeomapTypeInfo=function(e){};t.createInnerGeomapContent=function(e,n){};t.rebind=function(e,n){};t.getBindingInfo=function(e){};t.updateBindingInfo=function(e,n){};t.fetchProperties=function(e){return Promise.resolve([])};t.getGeomapBound=function(){return false};t.getControlPositions=function(){return{controlPositions:{navigation:n.TopLeft,selection:n.TopRight,fullscreen:n.TopRight,scale:n.BottomLeft}}};t.getVisibleProperties=function(e){const n=e.getAggregation("items")||[];let t=[];if(n.length>0){t=n.map(e=>e.getPropertyKey())}return t};return t});
+//# sourceMappingURL=GeomapDelegate.js.map

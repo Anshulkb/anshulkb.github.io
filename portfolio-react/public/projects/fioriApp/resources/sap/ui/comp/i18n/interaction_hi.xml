@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF8"?>
+<interaction-documentation library="sap.ui.comp" xmlns="http://schemas.sap.com/sapui5/extension/sap.ui.core.InteractionDocumentation/1">
+	<control-interactions>
+		<control name="sap.ui.comp.smarttable.SmartTable"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>यदि उपलब्ध हो तो <span class="uicontrol">तालिका सेटिंग</span> डायलॉग खोलता है.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Ctrl + Shift + E</kbd> <description>
+				<p>यदि उपलब्ध हो तो तालिका का <span class="uicontrol">इस तरह निर्यात करें</span> डायलॉग खोलता है.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfilterbar.SmartFilterbar"/>
+		<interaction> <kbd>Enter</kbd> <description>
+				<p><span class="uicontrol">स्मार्ट फ़िल्टर बार</span> के लिए खोज ट्रिगर करता है.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>टैब श्रृंखला में अगले इंटरैक्टिव तत्व पर फ़ोकस ले जाता है.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>टैब श्रृंखला में पिछले इंटरैक्टिव तत्व पर फ़ोकस ले जाता है.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>अगले UI समूह (F6 समूह) में नियंत्रण के बाहर पहले इंटरैक्टिव तत्व पर फ़ोकस ले जाता है.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>पिछले UI समूह (F6 समूह) में नियंत्रण के बाहर पहले इंटरैक्टिव तत्व पर फ़ोकस ले जाता है.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartform.SmartForm"/>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>टैब श्रृंखला में अगले इंटरैक्टिव तत्व पर फ़ोकस ले जाता है.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>टैब श्रृंखला में पिछले इंटरैक्टिव तत्व पर फ़ोकस ले जाता है.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>टैब श्रृंखला में अगले UI समूह (F6 समूह) के पहले इंटरैक्टिव तत्व पर फ़ोकस ले जाता है.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>टैब श्रृंखला में पिछले UI समूह (F6 समूह) के पहले इंटरैक्टिव तत्व पर फ़ोकस ले जाता है.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfield.SmartField"/>
+		<interaction> <kbd>F4</kbd> <description>
+				<p><span class="uicontrol">मान सहायता डायलॉग</span> की ड्रॉपडाउन सूची या संक्षिप्त करने योग्य क्षेत्रों को खोलता/बंद करता है.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.valuehelpdialog.ValueHelpDialog"/>
+		<interaction> <kbd>Esc</kbd> <description>
+				<p><span class="uicontrol">मान सहायता डायलॉग</span> को रद्द और बंद करता है.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p><span class="uicontrol">मान सहायता डायलॉग</span> में फ़ोकस को अगले इंटरैक्टिव तत्व पर ले जाता है. यदि अंतिम तत्व पर फ़ोकस किया जाता है, तो फ़ोकस को <span class="uicontrol">मान सहायता डायलॉग</span> के अंदर पहले इंटरैक्टिव तत्व पर ले जाया जाता है.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p><span class="uicontrol">मान सहायता डायलॉग</span> में पिछले इंटरैक्टिव तत्व पर फ़ोकस ले जाता है.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.SmartChart"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p><span class="uicontrol">दृश्य सेटिंग</span> डायलॉग खोलता है</p>
+			</description>
+		</interaction>
+	</control-interactions>
+</interaction-documentation>

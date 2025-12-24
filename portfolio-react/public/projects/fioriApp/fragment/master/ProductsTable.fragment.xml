@@ -1,0 +1,134 @@
+<core:FragmentDefinition
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+>
+    <Table
+        id="idMasterProdTable"
+        items="{path:'oMasterModel>/tableData', filters:[{path:'isDeleted', operator:'NE', value1:'X'}]}"
+        mode="MultiSelect"
+        growing="true"
+        growingScrollToLoad="true"
+        growingThreshold="{=${oMasterModel>/tableData}.length}"
+    >
+        <columns>
+            <Column width="10rem">
+                <Text text="{i18n>product} {i18n>name}" />
+            </Column>
+            <Column width="20rem">
+                <Text text="{i18n>desc}" />
+            </Column>
+            <Column width="10rem">
+                <Text text="{i18n>brand}" />
+            </Column>
+            <Column width="10rem">
+                <Text text="{i18n>category}" />
+            </Column>
+            <Column width="5rem">
+                <Text text="{i18n>price}" />
+            </Column>
+            <Column width="5rem">
+                <Text text="{i18n>discount}" />
+            </Column>
+            <Column width="5rem">
+                <Text text="{i18n>rating}" />
+            </Column>
+            <Column width="5rem">
+                <Text text="{i18n>stock}" />
+            </Column>
+            <Column width="7rem">
+                <Text text="{i18n>moq2}" />
+            </Column>
+            <Column width="8rem">
+                <Text text="{i18n>tags}" />
+            </Column>
+            <Column width="10rem">
+                <Text text="{i18n>sku}" />
+            </Column>
+            <Column width="5rem">
+                <Text text="{i18n>weight}" />
+            </Column>
+            <Column width="7rem">
+                <Text text="{i18n>availability}" />
+            </Column>
+            <Column width="12rem">
+                <Text text="{i18n>dimension} (WxHxD)" />
+            </Column>
+            <Column width="10rem">
+                <Text text="{i18n>warrDet}" />
+            </Column>
+            <Column width="10rem">
+                <Text text="{i18n>shipinfo}" />
+            </Column>
+            <Column width="8rem">
+                <Text text="{i18n>returnPolicy}" />
+            </Column>
+            <Column
+                width="5rem"
+                hAlign="Center"
+            >
+                <Text text="{i18n>barcode}" />
+            </Column>
+            <Column
+                width="5rem"
+                hAlign="Center"
+            >
+                <Text text="{i18n>qrCode}" />
+            </Column>
+            <Column
+                width="5rem"
+                hAlign="Center"
+            >
+                <Text text="{i18n>images}" />
+            </Column>
+            <Column
+                width="6rem"
+                hAlign="Center"
+            >
+                <Text text="{i18n>thumbnail}" />
+            </Column>
+        </columns>
+        <ColumnListItem>
+            <Text text="{oMasterModel>Product Name}" />
+            <ExpandableText
+                class="sapUiTinyMarginBottom sapUiTinyMarginTop"
+                text="{oMasterModel>Description}"
+                overflowMode="Popover"
+            />
+            <Text text="{oMasterModel>Brand}" />
+            <Text text="{oMasterModel>Category}" />
+            <Text text="{oMasterModel>Price}" />
+            <Text text="{oMasterModel>Discount}" />
+            <Text text="{oMasterModel>Rating}" />
+            <Text text="{oMasterModel>Stock}" />
+            <Text text="{oMasterModel>Minimum Order Quantity}" />
+            <Text text="{oMasterModel>Tags}" />
+            <Text text="{oMasterModel>Stock keeping unit}" />
+            <Text text="{oMasterModel>Weight}" />
+            <Text text="{oMasterModel>Availability}" />
+            <Text text="{oMasterModel>Dimensions (WxHxD)}" />
+            <Text text="{oMasterModel>Warranty Details}" />
+            <Text text="{oMasterModel>Shipping Information}" />
+            <Text text="{oMasterModel>Return Policy}" />
+            <Button
+                icon="sap-icon://bar-code"
+                press="onRowBtnPress"
+                tooltip="{i18n>barcode}"
+            />
+            <Button
+                icon="sap-icon://qr-code"
+                press="onRowBtnPress"
+                tooltip="{i18n>qrCode}"
+            />
+            <Button
+                icon="sap-icon://image-viewer"
+                press="onRowBtnPress"
+                tooltip="{i18n>images}"
+            />
+            <Button
+                icon="sap-icon://picture"
+                press="onRowBtnPress"
+                tooltip="{i18n>thumbnail}"
+            />
+        </ColumnListItem>
+    </Table>
+</core:FragmentDefinition>

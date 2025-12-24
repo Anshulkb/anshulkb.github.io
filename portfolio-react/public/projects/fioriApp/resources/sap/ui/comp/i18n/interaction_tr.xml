@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF8"?>
+<interaction-documentation library="sap.ui.comp" xmlns="http://schemas.sap.com/sapui5/extension/sap.ui.core.InteractionDocumentation/1">
+	<control-interactions>
+		<control name="sap.ui.comp.smarttable.SmartTable"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Varsa <span class="uicontrol">Tablo ayarları</span> diyaloğunu açar.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Ctrl + Shift + E</kbd> <description>
+				<p>Varsa <span class="uicontrol">Farklı dışa aktar</span> diyaloğunu açar.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfilterbar.SmartFilterbar"/>
+		<interaction> <kbd>Enter</kbd> <description>
+				<p><span class="uicontrol">Akıllı filtre çubuğu</span> için aramayı tetikler.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Odağı sekme zincirindeki bir sonraki etkileşimli öğeye taşır.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Odağı sekme zincirindeki bir önceki etkileşimli öğeye taşır.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Odağı bir sonraki arabirim grubunda (F6 grubu) denetimin dışındaki ilk etkileşimli öğeye taşır.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Odağı bir önceki arabirim grubunda (F6 grubu) denetimin dışındaki ilk etkileşimli öğeye taşır.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartform.SmartForm"/>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Odağı sekme zincirindeki bir sonraki etkileşimli öğeye taşır.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Odağı sekme zincirindeki bir önceki etkileşimli öğeye taşır.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Odağı sekme zincirinde bir sonraki arabirim grubunun (F6 grubu) ilk etkileşimli öğesine taşır.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Odağı sekme zincirinde bir önceki arabirim grubunun (F6 grubu) ilk etkileşimli öğesine taşır.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfield.SmartField"/>
+		<interaction> <kbd>F4</kbd> <description>
+				<p><span class="uicontrol">Giriş yardımı</span> diyaloğunun açılır listesini veya daraltılabilir alanlarını açar/kapatır.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.valuehelpdialog.ValueHelpDialog"/>
+		<interaction> <kbd>Esc</kbd> <description>
+				<p><span class="uicontrol">Giriş yardımı diyaloğunu</span> iptal eder ve kapatır.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Odağı <span class="uicontrol">Giriş yardımı diyaloğundaki</span> bir sonraki etkileşimli öğeye taşır. Odak son değerdeyse <span class="uicontrol">Giriş yardımı diyaloğu</span> içindeki ilk etkileşimli öğeye taşınır.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Odağı <span class="uicontrol">Giriş yardımı diyaloğundaki</span> bir önceki etkileşimli öğeye taşır.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.SmartChart"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p><span class="uicontrol">Ayarları görüntüle</span> diyaloğunu açar</p>
+			</description>
+		</interaction>
+	</control-interactions>
+</interaction-documentation>

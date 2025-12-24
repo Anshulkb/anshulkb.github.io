@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF8"?>
+<interaction-documentation library="sap.ui.comp" xmlns="http://schemas.sap.com/sapui5/extension/sap.ui.core.InteractionDocumentation/1">
+	<control-interactions>
+		<control name="sap.ui.comp.smarttable.SmartTable"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Mở hộp thoại <span class="uicontrol">Thiết lập bảng</span>, nếu có sẵn.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Ctrl + Shift + E</kbd> <description>
+				<p>Mở hộp thoại <span class="uicontrol">Xuất dưới dạng</span> của bảng, nếu có sẵn.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfilterbar.SmartFilterbar"/>
+		<interaction> <kbd>Enter</kbd> <description>
+				<p>Kích hoạt tìm kiếm cho <span class="uicontrol">Thanh bộ lọc thông minh</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Di chuyển tiêu điểm đến yếu tố tương tác tiếp theo trong chuỗi thẻ.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Di chuyển tiêu điểm đến yếu tố tương tác trước đó trong chuỗi thẻ.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Di chuyển tiêu điểm đến yếu tố tương tác đầu tiên bên ngoài phần điều khiển trong nhóm giao diện người dùng tiếp theo (nhóm F6).</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Di chuyển tiêu điểm đến yếu tố tương tác đầu tiên bên ngoài phần điều khiển trong nhóm giao diện người dùng trước đó (nhóm F6).</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartform.SmartForm"/>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Di chuyển tiêu điểm đến yếu tố tương tác tiếp theo trong chuỗi thẻ.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Di chuyển tiêu điểm đến yếu tố tương tác trước đó trong chuỗi thẻ.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Di chuyển tiêu điểm đến yếu tố tương tác đầu tiên của nhóm giao diện người dùng tiếp theo (nhóm F6) trong chuỗi thẻ.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Di chuyển tiêu điểm đến yếu tố tương tác đầu tiên của nhóm giao diện người dùng trước đó (nhóm F6) trong chuỗi thẻ.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfield.SmartField"/>
+		<interaction> <kbd>F4</kbd> <description>
+				<p>Mở/đóng danh sách thả xuống hoặc vùng có thể thu gọn của <span class="uicontrol">Hộp thoại chỉ dẫn nhập</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.valuehelpdialog.ValueHelpDialog"/>
+		<interaction> <kbd>Esc</kbd> <description>
+				<p>Hủy và đóng <span class="uicontrol">Hộp thoại chỉ dẫn nhập.</span></p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Di chuyển tiêu điểm đến yếu tố tương tác tiếp theo trong <span class="uicontrol">Hộp thoại chỉ dẫn nhập</span>. Nếu yếu tố cuối cùng được lấy tiêu điểm, tiêu điểm sẽ được chuyển đến yếu tố tương tác đầu tiên bên trong <span class="uicontrol">Hộp thoại chỉ dẫn nhập</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Di chuyển tiêu điểm đến yếu tố tương tác trước đó trong <span class="uicontrol">Hộp thoại chỉ dẫnh nhập</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.SmartChart"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Mở hộp thoại <span class="uicontrol">Thiết lập màn hình</span></p>
+			</description>
+		</interaction>
+	</control-interactions>
+</interaction-documentation>

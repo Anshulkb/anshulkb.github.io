@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF8"?>
+<interaction-documentation library="sap.ui.comp" xmlns="http://schemas.sap.com/sapui5/extension/sap.ui.core.InteractionDocumentation/1">
+	<control-interactions>
+		<control name="sap.ui.comp.smarttable.SmartTable"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Abre o diálogo <span class="uicontrol">Definições de tabela</span>, se disponível.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Ctrl + Shift + E</kbd> <description>
+				<p>Abre o diálogo <span class="uicontrol">Exportar como</span> da tabela, se disponível.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfilterbar.SmartFilterbar"/>
+		<interaction> <kbd>Enter</kbd> <description>
+				<p>Aciona a pesquisa para <span class="uicontrol">Barra de filtros inteligente</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Move o foco para o próximo elemento interativo na cadeia de separadores.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Move o foco para o elemento interativo anterior na cadeia de separadores.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Move o foco para o primeiro elemento interativo fora do controlo no próximo grupo da IU (grupo F6).</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Move o foco para o primeiro elemento interativo fora do controlo no grupo da IU anterior (grupo F6).</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartform.SmartForm"/>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Move o foco para o próximo elemento interativo na cadeia de separadores.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Move o foco para o elemento interativo anterior na cadeia de separadores.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Move o foco para o primeiro elemento interativo do próximo grupo da IU (grupo F6) na cadeia de separadores.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Move o foco para o primeiro elemento interativo do grupo da IU anterior (grupo F6) na cadeia de separadores.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfield.SmartField"/>
+		<interaction> <kbd>F4</kbd> <description>
+				<p>Abre/fecha a lista pendente ou as áreas comprimíveis do <span class="uicontrol">Diálogo de entradas possíveis</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.valuehelpdialog.ValueHelpDialog"/>
+		<interaction> <kbd>Esc</kbd> <description>
+				<p>Cancela e fecha o <span class="uicontrol">Diálogo de entradas possíveis.</span></p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Move o foco para o próximo elemento interativo no <span class="uicontrol">Diálogo de entradas possíveis</span>. Se o último elemento estiver focado, o foco é movido para o primeiro elemento interativo dentro do <span class="uicontrol">Diálogo de entradas possíveis</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Move o foco para o elemento interativo anterior no <span class="uicontrol">Diálogo de entradas possíveis</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.SmartChart"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Abre o diálogo <span class="uicontrol">Ver definições</span></p>
+			</description>
+		</interaction>
+	</control-interactions>
+</interaction-documentation>
