@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF8"?>
+<interaction-documentation library="sap.ui.comp" xmlns="http://schemas.sap.com/sapui5/extension/sap.ui.core.InteractionDocumentation/1">
+	<control-interactions>
+		<control name="sap.ui.comp.smarttable.SmartTable"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>如果可用，打开<span class="uicontrol">表设置</span>对话框。</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Ctrl + Shift + E</kbd> <description>
+				<p>如果可用，打开表的<span class="uicontrol">导出为</span>对话框。</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfilterbar.SmartFilterbar"/>
+		<interaction> <kbd>Enter</kbd> <description>
+				<p>触发<span class="uicontrol">智能过滤器栏</span>的搜索。</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>将焦点移动到 tab 链中的下一个交互式元素。</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>将焦点移动到 tab 链中的上一个交互式元素。</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>将焦点移动到下一 UI 组（F6 组）中的控件外面的第一个交互式元素。</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>将焦点移动到上一 UI 组（F6 组）中的控件外面的第一个交互式元素。</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartform.SmartForm"/>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>将焦点移动到 tab 链中的下一个交互式元素。</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>将焦点移动到 tab 链中的上一个交互式元素。</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>将焦点移动到 tab 链中的下一 UI 组（F6 组）的第一个交互式元素。</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>将焦点移动到 tab 链中的上一 UI 组（F6 组）的第一个交互式元素。</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfield.SmartField"/>
+		<interaction> <kbd>F4</kbd> <description>
+				<p>打开/关闭<span class="uicontrol">值帮助对话框</span>的下拉列表或可折叠区域。</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.valuehelpdialog.ValueHelpDialog"/>
+		<interaction> <kbd>Esc</kbd> <description>
+				<p>取消并关闭<span class="uicontrol">值帮助对话框</span>。</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>将焦点移动到<span class="uicontrol">值帮助对话框</span>中的下一个交互式元素。如果聚焦最后一个元素，则会将焦点移动到<span class="uicontrol">值帮助对话框</span>内的第一个交互式元素。</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>将焦点移动到<span class="uicontrol">值帮助对话框</span>中的上一个交互式元素。</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.SmartChart"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>打开<span class="uicontrol">视图设置</span>对话框</p>
+			</description>
+		</interaction>
+	</control-interactions>
+</interaction-documentation>

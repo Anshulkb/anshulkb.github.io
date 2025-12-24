@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF8"?>
+<interaction-documentation library="sap.ui.comp" xmlns="http://schemas.sap.com/sapui5/extension/sap.ui.core.InteractionDocumentation/1">
+	<control-interactions>
+		<control name="sap.ui.comp.smarttable.SmartTable"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Buka dialog <span class="uicontrol">Tetapan Jadual</span>, jika tersedia.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Ctrl + Shift + E</kbd> <description>
+				<p>Buka dialog <span class="uicontrol">Eksport sebagai</span> bagi jadual, jika tersedia.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfilterbar.SmartFilterbar"/>
+		<interaction> <kbd>Enter</kbd> <description>
+				<p>Picu carian untuk <span class="uicontrol">Bar Penapis Pintar</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Alihkan fokus ke elemen interaktif seterusnya dalam rantaian tab.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Alihkan fokus ke elemen interaktif sebelumnya dalam rantaian tab.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Alihkan fokus ke elemen interaktif pertama di luar kawalan dalam kumpulan UI seterusnya (kumpulan F6).</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Alihkan fokus ke elemen interaktif pertama di luar kawalan dalam kumpulan UI sebelumnya (kumpulan F6).</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartform.SmartForm"/>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Alihkan fokus ke elemen interaktif seterusnya dalam rantaian tab.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Alihkan fokus ke elemen interaktif sebelumnya dalam rantaian tab.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Alihkan fokus ke elemen interaktif pertama kumpulan UI seterusnya (kumpulan F6) dalam rantaian tab.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Alihkan fokus ke elemen interaktif pertama kumpulan UI sebelumnya (kumpulan F6) dalam rantaian tab.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfield.SmartField"/>
+		<interaction> <kbd>F4</kbd> <description>
+				<p>Buka/tutup senarai juntai bawah atau bahagian yang boleh diruntuhkan bagi <span class="uicontrol">Dialog Bantuan Nilai</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.valuehelpdialog.ValueHelpDialog"/>
+		<interaction> <kbd>Esc</kbd> <description>
+				<p>Batalkan dan tutup <span class="uicontrol">Dialog Bantuan Nilai.</span></p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Alihkan fokus ke elemen interaktif seterusnya dalam <span class="uicontrol">Dialog Bantuan Nilai</span>. Jika elemen terakhir difokuskan, fokus dialihkan ke elemen interaktif pertama di dalam <span class="uicontrol">Dialog Bantuan Nilai</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Alihkan fokus ke elemen interaktif sebelumnya dalam <span class="uicontrol">Dialog Bantuan Nilai</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.SmartChart"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Buka dialog <span class="uicontrol">Tetapan Paparan</span></p>
+			</description>
+		</interaction>
+	</control-interactions>
+</interaction-documentation>

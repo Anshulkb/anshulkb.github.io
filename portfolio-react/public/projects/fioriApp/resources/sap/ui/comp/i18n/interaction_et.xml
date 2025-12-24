@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF8"?>
+<interaction-documentation library="sap.ui.comp" xmlns="http://schemas.sap.com/sapui5/extension/sap.ui.core.InteractionDocumentation/1">
+	<control-interactions>
+		<control name="sap.ui.comp.smarttable.SmartTable"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Avab dialoogi <span class="uicontrol">Tabelisätted</span>, kui see on saadaval.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Ctrl + Shift + E</kbd> <description>
+				<p>Avab tabeli dialoogi <span class="uicontrol">Ekspordi nimega</span>, kui see on saadaval.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfilterbar.SmartFilterbar"/>
+		<interaction> <kbd>Enter</kbd> <description>
+				<p>Käivitab funktsiooni <span class="uicontrol">Nutikas filtririba</span> otsingu.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Viib fookuse vahekaardiahelas järgmisele interaktiivsele elemendile.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Viib fookuse vahekaardiahelas eelmisele interaktiivsele elemendile.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Viib fookuse juhtelemendist väljaspool asuvale esimesele interaktiivsele elemendile järgmises kasutajaliidesegrupis (F6 grupis).</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Viib fookuse juhtelemendist väljaspool asuvale esimesele interaktiivsele elemendile eelmises kasutajaliidesegrupis (F6 grupis).</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartform.SmartForm"/>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Viib fookuse vahekaardiahelas järgmisele interaktiivsele elemendile.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Viib fookuse vahekaardiahelas eelmisele interaktiivsele elemendile.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Viib fookuse vahekaardiahelas järgmise kasutajaliidesegrupi (F6 grupi) esimesele interaktiivsele elemendile.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Viib fookuse vahekaardiahelas eelmise kasutajaliidesegrupi (F6 grupi) esimesele interaktiivsele elemendile.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfield.SmartField"/>
+		<interaction> <kbd>F4</kbd> <description>
+				<p>Avab/sulgeb <span class="uicontrol">sisestusspikri dialoogi</span> ripploendi või ahendatavad alad.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.valuehelpdialog.ValueHelpDialog"/>
+		<interaction> <kbd>Esc</kbd> <description>
+				<p>Tühistab ja sulgeb <span class="uicontrol">sisestusspikri dialoogi</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Viib fookuse <span class="uicontrol">sisestusspikri dialoogis</span> järgmisele interaktiivsele elemendile. Kui fookus on viimasel elemendil, viiakse fookus <span class="uicontrol">sisestusspikri dialoogis</span> esimesele interaktiivsele elemendile.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Viib fookuse <span class="uicontrol">sisestusspikri dialoogis</span> eelmisele interaktiivsele elemendile.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.SmartChart"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Avab dialoogi <span class="uicontrol">Kuva sätted</span></p>
+			</description>
+		</interaction>
+	</control-interactions>
+</interaction-documentation>

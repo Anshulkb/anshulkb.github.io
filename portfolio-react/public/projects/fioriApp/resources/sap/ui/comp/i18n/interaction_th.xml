@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF8"?>
+<interaction-documentation library="sap.ui.comp" xmlns="http://schemas.sap.com/sapui5/extension/sap.ui.core.InteractionDocumentation/1">
+	<control-interactions>
+		<control name="sap.ui.comp.smarttable.SmartTable"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>เปิดไดอะลอก <span class="uicontrol">การกำหนดค่าตาราง</span> ถ้ามี</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Ctrl + Shift + E</kbd> <description>
+				<p>เปิดไดอะลอก <span class="uicontrol">เอ็กซ์ปอร์ตเป็น</span> ของตาราง ถ้ามี</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfilterbar.SmartFilterbar"/>
+		<interaction> <kbd>Enter</kbd> <description>
+				<p>ทริกเกอร์การค้นหาสำหรับ <span class="uicontrol">แถบสมาร์ทฟิลเตอร์</span></p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>ย้ายโฟกัสไปยังองค์ประกอบแบบอินเตอร์แอคทีฟถัดไปในลำดับแท็บ</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>ย้ายโฟกัสไปยังองค์ประกอบแบบอินเตอร์แอคทีฟก่อนหน้าในลำดับแท็บ</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>ย้ายโฟกัสไปยังองค์ประกอบแบบอินเตอร์แอคทีฟแรกนอกตัวควบคุมในกลุ่ม UI ถัดไป (กลุ่ม F6)</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>ย้ายโฟกัสไปยังองค์ประกอบแบบอินเตอร์แอคทีฟแรกนอกตัวควบคุมในกลุ่ม UI ก่อนหน้า (กลุ่ม F6)</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartform.SmartForm"/>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>ย้ายโฟกัสไปยังองค์ประกอบแบบอินเตอร์แอคทีฟถัดไปในลำดับแท็บ</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>ย้ายโฟกัสไปยังองค์ประกอบแบบอินเตอร์แอคทีฟก่อนหน้าในลำดับแท็บ</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>ย้ายโฟกัสไปยังองค์ประกอบแบบอินเตอร์แอคทีฟแรกของกลุ่ม UI ถัดไป (กลุ่ม F6) ในลำดับแท็บ</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>ย้ายโฟกัสไปยังองค์ประกอบแบบอินเตอร์แอคทีฟแรกของกลุ่ม UI ก่อนหน้า (กลุ่ม F6) ในลำดับแท็บ</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfield.SmartField"/>
+		<interaction> <kbd>F4</kbd> <description>
+				<p>เปิด/ปิดดรอปดาวน์ลิสต์หรือพื้นที่ที่ย่อรวมได้ของ <span class="uicontrol">ไดอะลอกตัวช่วยการป้อนข้อมูล</span></p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.valuehelpdialog.ValueHelpDialog"/>
+		<interaction> <kbd>Esc</kbd> <description>
+				<p>ยกเลิกและปิด <span class="uicontrol">ไดอะลอกตัวช่วยการป้อนข้อมูล</span></p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>ย้ายโฟกัสไปยังองค์ประกอบแบบอินเตอร์แอคทีฟถัดไปใน <span class="uicontrol">ไดอะลอกตัวช่วยการป้อนข้อมูล</span> ถ้ามีการโฟกัสองค์ประกอบสุดท้าย โฟกัสจะถูกย้ายไปยังองค์ประกอบแบบอินเตอร์แอคทีฟแรกภายใน <span class="uicontrol">ไดอะลอกตัวช่วยการป้อนข้อมูล</span></p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>ย้ายโฟกัสไปยังองค์ประกอบแบบอินเตอร์แอคทีฟก่อนหน้าใน <span class="uicontrol">ไดอะลอกตัวช่วยการป้อนข้อมูล</span></p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.SmartChart"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>เปิดไดอะลอก <span class="uicontrol">การกำหนดค่ามุมมอง</span></p>
+			</description>
+		</interaction>
+	</control-interactions>
+</interaction-documentation>

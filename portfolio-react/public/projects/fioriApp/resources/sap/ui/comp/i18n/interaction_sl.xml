@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF8"?>
+<interaction-documentation library="sap.ui.comp" xmlns="http://schemas.sap.com/sapui5/extension/sap.ui.core.InteractionDocumentation/1">
+	<control-interactions>
+		<control name="sap.ui.comp.smarttable.SmartTable"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Odpre pogovorno okno <span class="uicontrol">Nastavitve tabele</span>, če je na voljo.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Ctrl + Shift + E</kbd> <description>
+				<p>Odpre pogovorno okno <span class="uicontrol">Izvozi kot</span>, če je na voljo.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfilterbar.SmartFilterbar"/>
+		<interaction> <kbd>Enter</kbd> <description>
+				<p>Sproži iskanje <span class="uicontrol">Pametne vrstica s filtri</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Premakne fokus na naslednji interaktivni element v verigi zavihkov.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Premakne fokus na prejšnji interaktivni element v verigi zavihkov.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Premakne fokus na prvi interaktivni element zunaj nadzora v naslednji skupini UV (skupina F6).</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Premakne fokus na prvi interaktivni element zunaj nadzora v prejšnji skupini UV (skupina F6).</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartform.SmartForm"/>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Premakne fokus na naslednji interaktivni element v verigi zavihkov.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Premakne fokus na prejšnji interaktivni element v verigi zavihkov.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Premakne fokus na prvi interaktivni element naslednje skupine UV (skupina F6) v verigi zavihkov.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Premakne fokus na prvi interaktivni element prejšnje skupine UV (skupina F6) v verigi zavihkov.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfield.SmartField"/>
+		<interaction> <kbd>F4</kbd> <description>
+				<p>Odpre/zapre spustni seznam ali področja za strnitev v <span class="uicontrol">pogovornem oknu za pomoč pri vnosu</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.valuehelpdialog.ValueHelpDialog"/>
+		<interaction> <kbd>Esc</kbd> <description>
+				<p>Prekliče in zapre <span class="uicontrol">pogovorno okno za pomoč pri vnosu.</span></p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Premakne fokus na naslednji interaktivni element v <span class="uicontrol">pogovornem oknu za pomoč pri vnosu</span>. Če je zadnji element fokusiran, se fokus premakne na prvi interaktivni element znotraj <span class="uicontrol">pogovornega okna za pomoč pri vnosu</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Premakne fokus na prejšnji interaktivni element v pogovornem oknu za <span class="uicontrol">pomoč pri vnosu</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.SmartChart"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Odpri pogovorno okno <span class="uicontrol">Nastavitve pogleda</span></p>
+			</description>
+		</interaction>
+	</control-interactions>
+</interaction-documentation>

@@ -1,0 +1,73 @@
+/* ============================================ */
+/* CSS for control sap.ui.mdc/TokenizerDisplay  */
+/* Base theme                                   */
+/* ============================================ */
+
+html.sap-desktop .sapUiMdcTokenizerDisplay.sapMTokenizer {
+	outline: none; /* hide focus of the tokenizer */
+	padding-left: 0; /* remove left padding of Tokenizer for Display mode */
+}
+
+@mdctokenizer-large-line-height: 1.375rem;
+@mdctokenizer-small-line-height: 1rem;
+@mdctokenizer-large-padding-topbottom: 0.6875rem;
+@mdctokenizer-small-padding-topbottom: 0.3125rem;
+
+/* show a focus around the more link */
+.sapUiMdcTokenizerDisplay .sapMTokenizerIndicator:focus {
+	outline: @sapUiContentFocusWidth dotted var(--sapContent_FocusColor);
+	outline-offset: -1px;
+	text-decoration: underline;
+}
+
+.sapUiMdcTokenizerDisplay .sapMTokenizerIndicator:hover {
+	text-decoration: underline;
+}
+
+.sapMTokenizer.sapUiMdcTokenizerDisplay .sapMTokenizerIndicator {
+	line-height: @mdctokenizer-small-line-height;
+}
+
+/* hide emptyIndicator for TokenizerDisplay */
+.sapUiMdcTokenizerDisplay .sapMEmptyIndicator.sapMEmptyIndicatorAuto {
+	display: none;
+}
+
+/* show emptyIndicator for TokenizerDisplay */
+.sapMShowEmpty-CTX .sapUiMdcTokenizerDisplay .sapMEmptyIndicator.sapMEmptyIndicatorAuto {
+	line-height: @mdctokenizer-small-line-height;
+	font-size: @sapMFontMediumSize;
+	display: inline-block;
+}
+
+/* enable mouse selection on scrollcontainer */
+.sapUiMdcTokenizerDisplay .sapMTokenizerScrollContainer {
+	-webkit-user-select: text;
+
+	/* give the Tokenizer the required top/bottom paddings so that is works like a text control */
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+/* usage in Form */
+.sapUiFormEdit {
+	.sapUiMdcTokenizerDisplay .sapMTokenizerIndicator,
+	.sapUiMdcTokenizerDisplay .sapMEmptyIndicator.sapMEmptyIndicatorAuto {
+		line-height: @mdctokenizer-large-line-height;
+	}
+
+	.sapUiMdcTokenizerDisplay .sapMTokenizerIndicator:focus {
+		text-decoration: underline;
+	}
+}
+
+.sapUiSizeCozy .sapUiFormEdit .sapUiMdcTokenizerDisplay {
+	/* give the Tokenizer the required top/bottom paddings so that is works like a text control */
+	padding-top: @mdctokenizer-large-padding-topbottom;
+	padding-bottom: @mdctokenizer-large-padding-topbottom;
+}
+
+.sapUiSizeCompact .sapUiFormEdit .sapUiMdcTokenizerDisplay {
+	padding-top: @mdctokenizer-small-padding-topbottom;
+	padding-bottom: @mdctokenizer-small-padding-topbottom;
+}

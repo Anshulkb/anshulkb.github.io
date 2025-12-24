@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF8"?>
+<interaction-documentation library="sap.ui.comp" xmlns="http://schemas.sap.com/sapui5/extension/sap.ui.core.InteractionDocumentation/1">
+	<control-interactions>
+		<control name="sap.ui.comp.smarttable.SmartTable"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Yn agor y ddeialog <span class="uicontrol">Gosodiadau Tabl</span>, os yw ar gael.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Ctrl + Shift + E</kbd> <description>
+				<p>Yn agor deialog <span class="uicontrol">Allgludo fel</span> y tabl, os yw ar gael.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfilterbar.SmartFilterbar"/>
+		<interaction> <kbd>Enter</kbd> <description>
+				<p>Yn sbarduno'r chwiliad am y <span class="uicontrol">Bar Hidlo Clyfar</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Yn symud y ffocws i'r elfen ryngweithiol nesaf yn y gadwyn tabiau.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Yn symud y ffocws i'r elfen ryngweithiol flaenorol yn y gadwyn tabiau.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Yn symud y ffocws i'r elfen ryngweithiol gyntaf y tu allan i reolydd yn y grŵp UI nesaf (grŵp F6).</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Yn symud y ffocws i'r elfen ryngweithiol gyntaf y tu allan i reolydd yn y grŵp UI blaenorol (grŵp F6).</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartform.SmartForm"/>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Yn symud y ffocws i'r elfen ryngweithiol nesaf yn y gadwyn tabiau.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Yn symud y ffocws i'r elfen ryngweithiol flaenorol yn y gadwyn tabiau.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Yn symud y ffocws i elfen ryngweithiol gyntaf y grŵp UI nesaf (grŵp F6) yn y gadwyn tabiau.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Yn symud y ffocws i elfen ryngweithiol gyntaf y grŵp UI blaenorol (grŵp F6) yn y gadwyn tabiau.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfield.SmartField"/>
+		<interaction> <kbd>F4</kbd> <description>
+				<p>Yn agor/cau'r gwymprestr neu fannau sy'n cwympo yn y <span class="uicontrol">Ddeialog Help Gwerth</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.valuehelpdialog.ValueHelpDialog"/>
+		<interaction> <kbd>Esc</kbd> <description>
+				<p>Yn canslo ac yn cau'r <span class="uicontrol">Ddeialog Help Gwerth</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Yn symud y ffocws i'r elfen ryngweithiol nesaf yn y <span class="uicontrol">Ddeialog Help Gwerth</span>. Os oes ffocws ar yr elfen olaf, bydd y ffocws yn symud i'r elfen ryngweithiol gyntaf y tu mewn i'r <span class="uicontrol">Ddeialog Help Gwerth</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Yn symud y ffocws i'r elfen ryngweithiol flaenorol yn y <span class="uicontrol">Ddeialog Help Gwerth</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.SmartChart"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Yn agor y ddeialog <span class="uicontrol">Gweld Gosodiadau</span></p>
+			</description>
+		</interaction>
+	</control-interactions>
+</interaction-documentation>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF8"?>
+<interaction-documentation library="sap.ui.comp" xmlns="http://schemas.sap.com/sapui5/extension/sap.ui.core.InteractionDocumentation/1">
+	<control-interactions>
+		<control name="sap.ui.comp.smarttable.SmartTable"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Obre el diàleg <span class="uicontrol">Opcions de taula</span>, si està disponible.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Ctrl + Shift + E</kbd> <description>
+				<p>Obre el diàleg <span class="uicontrol">Exportar com a</span> de la taula, si està disponible.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfilterbar.SmartFilterbar"/>
+		<interaction> <kbd>Enter</kbd> <description>
+				<p>Inicia la cerca per a la <span class="uicontrol">barra de filtres intel·ligent</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Desplaça el focus a l'element interactiu següent de la cadena de pestanyes.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Desplaça el focus a l'element interactiu anterior de la cadena de pestanyes.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Desplaça el focus al primer element interactiu que hi ha fora del control al grup d'IU següent (grup F6).</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Desplaça el focus al primer element interactiu que hi ha fora del control al grup d'IU anterior (grup F6).</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartform.SmartForm"/>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Desplaça el focus a l'element interactiu següent de la cadena de pestanyes.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Desplaça el focus a l'element interactiu anterior de la cadena de pestanyes.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Desplaça el focus al primer element interactiu del grup d'IU següent (grup F6) de la cadena de pestanyes.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Desplaça el focus al primer element interactiu del grup d'IU anterior (grup F6) de la cadena de pestanyes.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfield.SmartField"/>
+		<interaction> <kbd>F4</kbd> <description>
+				<p>Obre/tanca la llista desplegable o les àrees ocultables del <span class="uicontrol">diàleg de l'ajuda per a entrades</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.valuehelpdialog.ValueHelpDialog"/>
+		<interaction> <kbd>Esc</kbd> <description>
+				<p>Cancel·la i tanca el <span class="uicontrol">diàleg de l'ajuda per a entrades</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Desplaça el focus a l'element interactiu següent del <span class="uicontrol">diàleg de l'ajuda per a entrades</span>. Si el focus es troba a l'últim element, es desplaçarà al primer element interactiu que hi hagi dins del <span class="uicontrol">diàleg de l'ajuda per a entrades</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Desplaça el focus a l'element interactiu anterior del <span class="uicontrol">diàleg de l'ajuda per a entrades</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.SmartChart"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Obre el diàleg <span class="uicontrol">Opcions de vista</span></p>
+			</description>
+		</interaction>
+	</control-interactions>
+</interaction-documentation>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF8"?>
+<interaction-documentation library="sap.ui.comp" xmlns="http://schemas.sap.com/sapui5/extension/sap.ui.core.InteractionDocumentation/1">
+	<control-interactions>
+		<control name="sap.ui.comp.smarttable.SmartTable"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Apre la finestra di dialogo <span class="uicontrol">Impostazioni tabella</span>, se disponibile.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Ctrl + Shift + E</kbd> <description>
+				<p>Apre la finestra di dialogo <span class="uicontrol">Esporta come</span>, se disponibile.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfilterbar.SmartFilterbar"/>
+		<interaction> <kbd>Enter</kbd> <description>
+				<p>Attiva la ricerca della <span class="uicontrol">Barra dei filtri smart</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Sposta il focus sull'elemento interattivo successivo nella sequenza di tabulatori.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Sposta il focus sull'elemento interattivo precedente nella sequenza di tabulatori.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Sposta il focus sul primo elemento interattivo al di fuori del controllo nel gruppo di UI successivo (gruppo F6).</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Sposta il focus sul primo elemento interattivo al di fuori del controllo nel gruppo di UI precedente (gruppo F6).</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartform.SmartForm"/>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Sposta il focus sull'elemento interattivo successivo nella sequenza di tabulatori.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Sposta il focus sull'elemento interattivo precedente nella sequenza di tabulatori.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Sposta il focus sul primo elemento interattivo del gruppo di UI successivo (gruppo F6) nella sequenza di tabulatori.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Sposta il focus sul primo elemento interattivo del gruppo di UI precedente (gruppo F6) nella sequenza di tabulatori.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfield.SmartField"/>
+		<interaction> <kbd>F4</kbd> <description>
+				<p>Apre/chiude la lista di riepilogo a discesa o le aree comprimibili della <span class="uicontrol">Finestra di dialogo dell'help valori</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.valuehelpdialog.ValueHelpDialog"/>
+		<interaction> <kbd>Esc</kbd> <description>
+				<p>Annulla e chiude la <span class="uicontrol">Finestra di dialogo dell'help valori</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Sposta il focus sull'elemento interattivo successivo nella <span class="uicontrol">Finestra di dialogo dell'help valori</span>. Se il focus è sull'ultimo elemento, viene spostato sul primo elemento interattivo all'interno della <span class="uicontrol">Finestra di dialogo dell'help valori</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Sposta il focus sull'elemento interattivo precedente nella <span class="uicontrol">Finestra di dialogo dell'help valori</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.SmartChart"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Apre la finestra di dialogo <span class="uicontrol">Impostazioni view</span></p>
+			</description>
+		</interaction>
+	</control-interactions>
+</interaction-documentation>

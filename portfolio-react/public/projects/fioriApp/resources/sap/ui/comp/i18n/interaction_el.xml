@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF8"?>
+<interaction-documentation library="sap.ui.comp" xmlns="http://schemas.sap.com/sapui5/extension/sap.ui.core.InteractionDocumentation/1">
+	<control-interactions>
+		<control name="sap.ui.comp.smarttable.SmartTable"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Ανοίγει τον διάλογο <span class="uicontrol">Ρυθμίσεις Πίνακα</span>, αν υπάρχει.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Ctrl + Shift + E</kbd> <description>
+				<p>Ανοίγει τον διάλογο του πίνακα <span class="uicontrol">Εξαγωγή Ως</span>, αν υπάρχει.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfilterbar.SmartFilterbar"/>
+		<interaction> <kbd>Enter</kbd> <description>
+				<p>Ξεκινάει την αναζήτηση για την <span class="uicontrol">Γραμμή Έξυπνου Φίλτρου</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Μετακινεί την εστίαση στο επόμενο διαδραστικό στοιχείο στην αλυσίδα καρτέλων.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Μετακινεί την εστίαση σε προηγούμενο διαδραστικό στοιχείο στην αλυσίδα καρτέλων.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Μετακινεί την εστίαση στο πρώτο διαδραστικό στοιχείο έξω από τον έλεγχο στην επόμενη ομάδα UI (ομάδα F6).</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Μετακινεί το πρώτο διαδραστικό στοιχείο έξω από τον έλεγχο στην προηγούμενη ομάδα UI (ομάδα F6).</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartform.SmartForm"/>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Μετακινεί την εστίαση στο επόμενο διαδραστικό στοιχείο στην αλυσίδα καρτέλων.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Μετακινεί την εστίαση σε προηγούμενο διαδραστικό στοιχείο στην αλυσίδα καρτέλων.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Μετακινεί την εστίαση στο πρώτο διαδραστικό στοιχείο έξω από τον έλεγχο στην επόμενη ομάδα UI (ομάδα F6).</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Μετακινεί την εστίαση στο πρώτο διαδραστικό στοιχείο έξω από τον έλεγχο στην επόμενη ομάδα UI (ομάδα F6).</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfield.SmartField"/>
+		<interaction> <kbd>F4</kbd> <description>
+				<p>Ανοίγει/κλείνει την αναπτυσσόμενη λίστα ή τις περιοχές με δυνατότητα σύμπτυξης του <span class="uicontrol">Διαλόγου Βοήθειας Τιμής</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.valuehelpdialog.ValueHelpDialog"/>
+		<interaction> <kbd>Esc</kbd> <description>
+				<p>Ακυρώνει και κλείνει τον <span class="uicontrol">Διάλογο Βοήθειας Τιμής.</span></p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Μετακινεί την εστίαση στο επόμενο διαδραστικό στοιχείο στον <span class="uicontrol">Διάλογο Βοήθειας Τιμής</span>. Αν γίνει εστίαση στο τελευταίο στοιχείο, η εστίαση μετακινείται στο πρώτο διαδραστικό στοιχείο εντός του <span class="uicontrol">Διαλόγου Βοήθειας Τιμής</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Μετακινεί την εστίαση στο προηγούμενο διαδραστικό στοιχείο στον <span class="uicontrol">Διάλογο Βοήθειας Τιμής</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.SmartChart"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Ανοίγει τον διάλογο <span class="uicontrol">Προβολή Ρυθμίσεων</span></p>
+			</description>
+		</interaction>
+	</control-interactions>
+</interaction-documentation>

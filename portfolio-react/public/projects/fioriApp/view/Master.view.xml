@@ -1,0 +1,133 @@
+<mvc:View
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:u="sap.ui.unified"
+    controllerName="sap.dashboard.controller.Master"
+>
+    <Page
+        showHeader="false"
+        class="paddingTiny"
+        enableScrolling="false"
+    >
+        <VBox
+            backgroundDesign="Solid"
+            class="smallPaddingTop filterBarRadius paddingTiny sapUiTinyMarginTop sapUiTinyMarginBeginEnd smallPaddingBottom"
+            visible="{oMasterModel>/showFilter}"
+        >
+            <HBox alignItems="Center">
+                <Label
+                    text="{i18n>upFor}: "
+                    labelFor="idUploadSelect"
+                    class="sapUiTinyMarginBeginEnd"
+                />
+                <Select
+                    id="idUploadSelect"
+                    change="onSelectionChange"
+                    forceSelection="false"
+                    selectedKey="{oMasterModel>/sSelKey}"
+                    width="11.4rem"
+                >
+                    <core:Item
+                        key="E"
+                        text="Employees"
+                    />
+                    <core:Item
+                        key="P"
+                        text="Products"
+                    />
+                </Select>
+            </HBox>
+            <HBox
+                alignItems="Center"
+                visible="{oMasterModel>/showUpload}"
+            >
+                <Label
+                    text="{i18n>upFile}: "
+                    labelFor="idfileUploader"
+                    class="sapUiTinyMarginBeginEnd"
+                />
+                <u:FileUploader
+                    id="idfileUploader"
+                    name="myFileUpload"
+                    uploadUrl="upload/"
+                    fileType="xlsx,csv"
+                    tooltip="{i18n>upFileDesc}"
+                    value="{oMasterModel>/filePath}"
+                    change="onFileUploadEvent"
+                    typeMissmatch="onTypeMismatch"
+                />
+            </HBox>
+            <HBox
+                justifyContent="End"
+                visible="{oMasterModel>/showUpload}"
+            >
+                <Button
+                    text="{i18n>upload}"
+                    tooltip="{i18n>upFile}"
+                    press="onFileUploadEvent"
+                    type="Emphasized"
+                    class="sapUiSmallMarginEnd"
+                    enabled="{oMasterModel>/uploadBtnEnable}"
+                />
+                <Button
+                    text="{i18n>downTemp}"
+                    tooltip="{i18n>downTemp}"
+                    press="onTemplateDownload"
+                    type="Default"
+                />
+            </HBox>
+        </VBox>
+        <Bar
+            class="sapUiTinyMarginBeginEnd autoWidth topLeftRightBrdRad sapUiSmallMarginTop"
+            visible="{oMasterModel>/showTable}"
+        >
+            <contentLeft>
+                <Title text="{i18n>record}: {oMasterModel>/count}" />
+            </contentLeft>
+            <contentRight>
+                <Button
+                    icon="sap-icon://edit"
+                    press="onEditPress"
+                    tooltip="{i18n>edit}"
+                />
+                <Button
+                    icon="sap-icon://add"
+                    press="onAddPress"
+                    tooltip="{i18n>add}"
+                />
+                <Button
+                    icon="sap-icon://delete"
+                    press="onDeletePress"
+                    tooltip="{i18n>delete}"
+                />
+            </contentRight>
+        </Bar>
+        <ScrollContainer
+            id='idMasterScroll'
+            visible="{oMasterModel>/showTable}"
+            vertical="true"
+            horizontal="true"
+            height="{oMasterModel>/scrollHeight}"
+            class="sapUiTinyMarginBeginEnd sapUiSmallMarginBottom"
+        />
+        <footer>
+            <OverflowToolbar visible="{oMasterModel>/showTable}">
+                <ToolbarSpacer />
+                <Button
+                    text="{i18n>hsFilter}"
+                    press="onToggleFilterVisible"
+                />
+                <Button
+                    text="{i18n>save}"
+                    press="onRecordSavePress"
+                    type="Emphasized"
+                />
+                <Button
+                    text="{i18n>cancel}"
+                    press="onRecordCancelPress"
+                />
+            </OverflowToolbar>
+        </footer>
+    </Page>
+</mvc:View>

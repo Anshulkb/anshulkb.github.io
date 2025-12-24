@@ -1,0 +1,1 @@
+{"version":3,"file":"Item.js","names":["sap","ui","define","Element","Item","extend","metadata","library","properties","propertyKey","type","label"],"sources":["Item-dbg.js"],"mappings":";;;;;AAKAA,IAAIC,GAAGC,OAAO,CACV,uBACAC,IACA,aAcA,MAAMC,EAAOD,EAAQE,OAAO,yBAAyE,CACjGC,SAAU,CACNC,QAAS,aACTC,WAAY,CAMRC,YAAa,CACTC,KAAM,UAKVC,MAAO,CACHD,KAAM,cAOtB,OAAON","ignoreList":[]}

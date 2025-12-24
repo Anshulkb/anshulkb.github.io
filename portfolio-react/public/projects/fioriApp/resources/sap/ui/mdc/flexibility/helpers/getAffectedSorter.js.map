@@ -1,0 +1,1 @@
+{"version":3,"file":"getAffectedSorter.js","names":["sap","ui","define","addKeyOrName","getAffectedSorter","oChangeContent","sSortOrder","descending","key"],"sources":["getAffectedSorter-dbg.js"],"mappings":";;;;;AAKAA,IAAIC,GAAGC,OAAO,CACb,kBACGC,IACH,aAUA,MAAMC,EAAqBC,IAC1B,MAAMC,EAAaD,EAAeE,WAAa,OAAS,MACxD,MAAO,GAAGJ,EAAaE,GAAgBG,OAAOF,KAG/C,OAAOF","ignoreList":[]}

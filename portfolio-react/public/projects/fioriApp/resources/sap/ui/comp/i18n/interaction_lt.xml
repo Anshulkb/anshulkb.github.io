@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF8"?>
+<interaction-documentation library="sap.ui.comp" xmlns="http://schemas.sap.com/sapui5/extension/sap.ui.core.InteractionDocumentation/1">
+	<control-interactions>
+		<control name="sap.ui.comp.smarttable.SmartTable"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Esant galimybei atidaromas dialogo langas <span class="uicontrol">Lentelės parametrai</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Ctrl + Shift + E</kbd> <description>
+				<p>Esant galimybei atidaromas lentelės dialogo langas <span class="uicontrol">Eksportuoti kaip</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfilterbar.SmartFilterbar"/>
+		<interaction> <kbd>Enter</kbd> <description>
+				<p>Inicijuojama <span class="uicontrol">Intelektualiosios filtro juostos</span> paieška.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Suaktyvinamas paskesnis interaktyvusis elementas tabuliavimo grandinėje.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Suaktyvinamas ankstesnis interaktyvusis elementas tabuliavimo grandinėje.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Suaktyvinamas pirmas interaktyvusis elementas už valdiklio ribų paskesnėje UI grupėje (F6 grupė).</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Suaktyvinamas pirmas interaktyvusis elementas už valdiklio ribų ankstesnėje UI grupėje (F6 grupė).</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartform.SmartForm"/>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Suaktyvinamas paskesnis interaktyvusis elementas tabuliavimo grandinėje.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Suaktyvinamas ankstesnis interaktyvusis elementas tabuliavimo grandinėje.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Suaktyvinamas pirmas interaktyvusis elementas paskesnėje tabuliavimo grandinės UI grupėje (F6 grupė).</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Suaktyvinamas pirmas interaktyvusis elementas ankstesnėje tabuliavimo grandinės UI grupėje (F6 grupė).</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfield.SmartField"/>
+		<interaction> <kbd>F4</kbd> <description>
+				<p>Atidaromas / uždaromas  <span class="uicontrol">įvesties žinyno dialogo lango</span> išplečiamasis sąrašas arba sutraukiamos sritys.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.valuehelpdialog.ValueHelpDialog"/>
+		<interaction> <kbd>Esc</kbd> <description>
+				<p>Atšaukiamas ir uždaromas <span class="uicontrol">įvesties žinyno dialogo langas.</span></p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Suaktyvinamas paskesnis interaktyvusis elementas <span class="uicontrol">įvesties žinyno dialogo lange</span>. Jei suaktyvintas paskutinis elementas, suaktyvinamas pirmas interaktyvusis <span class="uicontrol">įvesties žinyno dialogo lango</span> elementas.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Suaktyvinamas ankstesnis interaktyvusis elementas <span class="uicontrol">įvesties žinyno dialogo lange</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.SmartChart"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Atidaromas dialogo langas <span class="uicontrol">Peržiūrėti parametrus</span></p>
+			</description>
+		</interaction>
+	</control-interactions>
+</interaction-documentation>

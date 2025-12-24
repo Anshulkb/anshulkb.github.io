@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF8"?>
+<interaction-documentation library="sap.ui.comp" xmlns="http://schemas.sap.com/sapui5/extension/sap.ui.core.InteractionDocumentation/1">
+	<control-interactions>
+		<control name="sap.ui.comp.smarttable.SmartTable"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>فتح مربع الحوار <span class="uicontrol">إعدادات الجدول</span>، إذا كان متوفرًا.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Ctrl + Shift + E</kbd> <description>
+				<p>فتح مربع الحوار <span class="uicontrol">تصدير باسم</span> للجدول، إذا كان متوفرًا.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfilterbar.SmartFilterbar"/>
+		<interaction> <kbd>Enter</kbd> <description>
+				<p>بدء تشغيل البحث عن <span class="uicontrol">شريط عوامل التصفية الذكية</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>نقل التركيز إلى العنصر التفاعلي التالي في سلسلة علامات التبويب.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>نقل التركيز إلى العنصر التفاعلي السابق في سلسلة علامات التبويب.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>نقل التركيز إلى العنصر التفاعلي الأول خارج عنصر التحكم في مجموعة واجهات المستخدم التالية (مجموعة F6).</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>نقل التركيز إلى العنصر التفاعلي الأول خارج عنصر التحكم في مجموعة واجهات المستخدم السابقة (مجموعة F6).</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartform.SmartForm"/>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>نقل التركيز إلى العنصر التفاعلي التالي في سلسلة علامات التبويب.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>نقل التركيز إلى العنصر التفاعلي السابق في سلسلة علامات التبويب.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>نقل التركيز إلى العنصر التفاعلي الأول لمجموعة واجهات المستخدم التالية (مجموعة F6) في سلسلة علامات التبويب.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>نقل التركيز إلى العنصر التفاعلي الأول لمجموعة واجهات المستخدم السابقة (مجموعة F6) في سلسلة علامات التبويب.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfield.SmartField"/>
+		<interaction> <kbd>F4</kbd> <description>
+				<p>فتح/إغلاق القائمة المنسدلة أو المناطق القابلة للطي في <span class="uicontrol">مربع حوار مساعدة الإدخال</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.valuehelpdialog.ValueHelpDialog"/>
+		<interaction> <kbd>Esc</kbd> <description>
+				<p>إلغاء وإغلاق <span class="uicontrol">مربع حوار مساعدة الإدخال.</span></p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>نقل التركيز إلى العنصر التفاعلي التالي في <span class="uicontrol">مربع حوار مساعدة الإدخال</span>. إذا تم التركيز على العنصر الأخير، فسيتم نقل التركيز إلى العنصر التفاعلي الأول داخل <span class="uicontrol">مربع حوار مساعدة الإدخال</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>نقل التركيز إلى العنصر التفاعلي السابق في <span class="uicontrol">مربع حوار مساعدة الإدخال</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.SmartChart"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>فتح مربع الحوار <span class="uicontrol">إعدادات العرض</span></p>
+			</description>
+		</interaction>
+	</control-interactions>
+</interaction-documentation>

@@ -1,0 +1,7 @@
+/*!
+ * OpenUI5
+ * (c) Copyright 2025 SAP SE or an SAP affiliate company.
+ * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+ */
+sap.ui.define(["sap/ui/core/Renderer","sap/ui/core/library","sap/m/library","sap/m/SelectRenderer"],(e,t,i,a)=>{"use strict";const{ValueState:n}=t;const{SelectType:d}=i;const r=e.extend(a);r.apiVersion=2;r.writeAccessibilityState=function(e,t){const i=t.getValueState(),a=t.getType()===d.IconOnly,r=t.getEnabled()&&t.getEditable(),l=[];let s=[],c;const o=t.getAriaAttributes();t.getLabels().forEach(e=>{if(e&&e.getId){l.push(e.getId())}});if(i!==n.None&&r){c=t.getValueStateMessageId()+"-sr"}if(l.length){s=s.concat(l)}const u={value:s.join(" "),append:true};e.accessibilityState(null,{role:this.getAriaRole(t),roledescription:a?undefined:t._sAriaRoleDescription,readonly:a?undefined:t.getEnabled()&&!t.getEditable(),required:t._isRequired()||undefined,disabled:!t.getEnabled()||undefined,expanded:o.aria?.expanded,invalid:t.getValueState()===n.Error&&r?true:undefined,labelledby:a||u.value===""?undefined:u,describedby:c,activedescendant:o.aria?.activedescendant,controls:o.aria?.controls,haspopup:t.getEditable()?"listbox":undefined})};return r});
+//# sourceMappingURL=FieldSelectRenderer.js.map

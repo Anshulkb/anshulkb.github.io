@@ -1,0 +1,25 @@
+<core:FragmentDefinition
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+>
+    <SelectDialog
+        id="idOrgSelDialog"
+        rememberSelections="true"
+        multiSelect="true"
+        noDataText="No organization found"
+        title="Organizations"
+        search="onOrgSearchDialog"
+        showClearButton="true"
+        confirm="onOrgF4DialogClose"
+        cancel="onOrgF4DialogClose"
+        confirmButtonText="Confirm"
+        items="{path:'oEmpModel>/aAllOrg', sorter:[{path:'text', descending: false}]}"
+        contentWidth="25rem"
+    >
+        <StandardListItem
+            title="{oEmpModel>text}"
+            iconDensityAware="false"
+            iconInset="false"
+        />
+    </SelectDialog>
+</core:FragmentDefinition>

@@ -1,0 +1,7 @@
+/*!
+ * OpenUI5
+ * (c) Copyright 2025 SAP SE or an SAP affiliate company.
+ * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+ */
+sap.ui.define(["sap/base/util/restricted/_pick","sap/ui/fl/apply/_internal/changes/Applier","sap/ui/fl/apply/_internal/changes/Reverter","sap/ui/fl/apply/_internal/flexState/changes/DependencyHandler","sap/ui/fl/apply/_internal/flexState/controlVariants/VariantManagementState","sap/ui/fl/apply/_internal/flexState/FlexObjectState"],function(e,a,n,t,r,i){"use strict";function s(a){const n=r.getControlChangesForVariant({...e(a,["vmReference","variantsMap","reference"]),vReference:a.currentVReference});var t=r.getControlChangesForVariant({...e(a,["vmReference","variantsMap","reference"]),vReference:a.newVReference});var i=[];if(t.length>0){i=n.slice();n.some(function(e){if(t[0]&&e.getId()===t[0].getId()){t.shift();i.shift()}else{return true}})}else{i=n}var s={changesToBeReverted:i.reverse(),changesToBeApplied:t};return s}var p={async switchVariant(e){var p=s(e);const l=i.getLiveDependencyMap(e.reference);p.changesToBeReverted.forEach(e=>e.setQueuedForRevert());p.changesToBeApplied.forEach(a=>{if(!a.isApplyProcessFinished()){a.setQueuedForApply();t.addRuntimeChangeToMap(a,e.appComponent,l)}});await n.revertMultipleChanges(p.changesToBeReverted,{...e,skipSetQueued:true});await a.applyMultipleChanges(p.changesToBeApplied,{...e,skipSetQueued:true});r.setCurrentVariant(e)}};return p});
+//# sourceMappingURL=Switcher.js.map

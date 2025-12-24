@@ -1,0 +1,95 @@
+{
+	"_version": "1.58.0",
+	"sap.app": {
+		"id": "sap.dashboard",
+		"i18n": {
+			"bundleUrl": "i18n/i18n.properties",
+			"supportedLocales": []
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"type": "application",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"dataSources": {}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"handleValidation": true,
+		"dependencies": {
+			"minUI5Version": "1.108.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "sap.dashboard.i18n.i18n",
+					"supportedLocales": [
+						""
+					],
+					"fallbackLocale": "",
+					"async": true
+				}
+			},
+			"productModel": {
+				"type": "sap.ui.model.json.JSONModel"
+			},
+			"prodDetailModel": {
+				"type": "sap.ui.model.json.JSONModel"
+			},
+			"mainModel": {
+				"type": "sap.ui.model.json.JSONModel"
+			},
+			"empModel": {
+				"type": "sap.ui.model.json.JSONModel"
+			},
+			"empDetailModel": {
+				"type": "sap.ui.model.json.JSONModel"
+			},
+			"masterModel": {
+				"type": "sap.ui.model.json.JSONModel"
+			}
+		},
+		"rootView": {
+			"viewName": "sap.dashboard.view.App",
+			"type": "XML",
+			"id": "app"
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/styles.css"
+				}
+			]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"type": "View",
+				"viewType": "XML",
+				"path": "sap.dashboard.view",
+				"controlId": "pagesContainer",
+				"controlAggregation": "pages"
+			},
+			"routes": [],
+			"targets": {}
+		},
+		"flexBundle": false
+	}
+}

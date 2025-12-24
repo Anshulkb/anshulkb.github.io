@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF8"?>
+<interaction-documentation library="sap.ui.comp" xmlns="http://schemas.sap.com/sapui5/extension/sap.ui.core.InteractionDocumentation/1">
+	<control-interactions>
+		<control name="sap.ui.comp.smarttable.SmartTable"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Отвара дијалог <span class="uicontrol">Подешавања табеле</span>, ако је доступан.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Ctrl + Shift + E</kbd> <description>
+				<p>Отвара дијалог табеле <span class="uicontrol">Извези као</span>, ако је доступан.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfilterbar.SmartFilterbar"/>
+		<interaction> <kbd>Enter</kbd> <description>
+				<p>Покреће тражење <span class="uicontrol">Паметне траке филтера</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Помера фокус на следећи интерактивни елемент у ланцу картица.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Помера фокус на претходни интерактивни елемент у ланцу картица.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Помера фокус на први интерактивни елемент изван контроле у следећој групи КИ (група F6).</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Помера фокус на први интерактивни елемент изван контроле у претходној групи КИ (група F6).</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartform.SmartForm"/>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Помера фокус на следећи интерактивни елемент у ланцу картица.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Помера фокус на претходни интерактивни елемент у ланцу картица.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>F6</kbd> <description>
+				<p>Помера фокус на први интерактивни елемент следеће групе КИ (група F6) у ланцу картица.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + F6</kbd> <description>
+				<p>Помера фокус на први интерактивни елемент претходне групе КИ (група F6) у ланцу картица.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.smartfield.SmartField"/>
+		<interaction> <kbd>F4</kbd> <description>
+				<p>Отвара/затвара падајућу листу или области <span class="uicontrol">дијалога помоћи при уносу</span> које се могу сажети.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.valuehelpdialog.ValueHelpDialog"/>
+		<interaction> <kbd>Esc</kbd> <description>
+				<p>Отказује и затвара <span class="uicontrol">дијалог помоћи при уносу.</span></p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Tab</kbd> <description>
+				<p>Помера фокус на следећи интерактивни елемент у <span class="uicontrol">дијалогу помоћи при уносу</span>. Ако је последњи елемент у фокусу, фокус се помера на први интерактивни елемент у оквиру <span class="uicontrol">дијалога помоћи при уносу</span>.</p>
+			</description>
+		</interaction>
+		<interaction> <kbd>Shift + Tab</kbd> <description>
+				<p>Помера фокус на претходни интерактивни елемент у <span class="uicontrol">дијалогу помоћи при уносу</span>.</p>
+			</description>
+		</interaction>
+	</control-interactions>
+	<control-interactions>
+		<control name="sap.ui.comp.SmartChart"/>
+		<interaction> <kbd>Ctrl + ,</kbd> <description>
+				<p>Отвара дијалог <span class="uicontrol">Прикажи подешавања</span></p>
+			</description>
+		</interaction>
+	</control-interactions>
+</interaction-documentation>

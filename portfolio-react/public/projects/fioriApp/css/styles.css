@@ -1,0 +1,119 @@
+.paddingTiny {
+  padding: 0.5rem;
+}
+.filterBarPadding {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.smallPaddingTop {
+  padding-top: 1rem;
+}
+.smallPaddingBottom {
+  padding-bottom: 1rem;
+}
+.tinyPaddingTop {
+  padding-top: 0.5rem;
+}
+
+.filterBarRadius {
+  border-radius: 1rem;
+}
+
+.autoWidth {
+  width: auto;
+}
+
+.topLeftRightBrdRad {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.salePrice {
+  text-decoration: line-through;
+}
+
+.removeRatingMargin.sapMRI {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.nanoMarginTop {
+  margin-top: 0.25rem;
+}
+.genericTagStyle .sapMGenericTagWrap {
+  background: 0 #eaecee;
+  padding: 0 0.375rem 0 0.375rem;
+}
+
+.genericTagStyle .sapMGenericTagWrap .sapMGenericTagText {
+  font-weight: bold;
+}
+.reviewBtnColor .sapMBtnInner {
+  color: black !important;
+}
+.fontBigBold.sapMObjStatus {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.fontBold .sapMObjStatusText {
+  font-weight: bold;
+}
+.selectImg {
+  border: 0.125rem solid #0032a5;
+  border-radius: 0.5rem;
+  outline-offset: 0rem;
+}
+
+@media only screen and (min-width: 2560px) {
+  .imgSize {
+    width: 400px;
+    height: 375px;
+  }
+  .scrollHorizontal {
+    justify-content: center;
+  }
+  .carouselImage {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 2559px) {
+  .imgSize {
+    width: 400px;
+    height: 350px;
+  }
+  .carouselImage {
+    width: 75px;
+    height: 75px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .imgSize {
+    width: 300px;
+    height: 325px;
+  }
+  .carouselImage {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .imgSize {
+    width: 300px;
+    height: 300px;
+  }
+  .carouselImage {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.scrollHorizontal {
+  overflow: auto hidden;
+}
+.carouselImage {
+  margin-left: 0.5rem;
+}

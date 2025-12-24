@@ -1,7 +1,7 @@
 const BASE_URL = "https://dummyjson.com/products";
 
 async function getAllProducts() {
-  const response = await fetch(`${BASE_URL}`);
+  const response = await fetch(`${BASE_URL}?limit=0`);
   const data = await response.json();
   return data;
 }

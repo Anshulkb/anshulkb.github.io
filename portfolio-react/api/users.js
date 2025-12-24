@@ -3,7 +3,7 @@ const BASE_URL = "https://dummyjson.com/users";
 /* ------------------- BASIC OPERATIONS ------------------- */
 
 async function getAllUsers() {
-  const response = await fetch(`${BASE_URL}`);
+  const response = await fetch(`${BASE_URL}?limit=0`);
   const data = await response.json();
   return data;
 }
@@ -14,26 +14,26 @@ async function getUserById(id) {
   return data;
 }
 
-async function searchUsers(query) {
-  const response = await fetch(`${BASE_URL}/search?q=${query}`);
-  const data = await response.json();
-  return data;
-}
+// async function searchUsers(query) {
+//   const response = await fetch(`${BASE_URL}/search?q=${query}`);
+//   const data = await response.json();
+//   return data;
+// }
 
 /* ------------------- MODIFY OPERATIONS ------------------- */
 
-async function addUser(userData) {
-  const response = await fetch(`${BASE_URL}/add`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(userData),
-  });
+// async function addUser(userData) {
+//   const response = await fetch(`${BASE_URL}/add`, {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify(userData),
+//   });
 
-  const data = await response.json();
-  return data;
-}
+//   const data = await response.json();
+//   return data;
+// }
 
 async function updateUser(id, userData) {
   const response = await fetch(`${BASE_URL}/${id}`, {
@@ -48,19 +48,20 @@ async function updateUser(id, userData) {
   return data;
 }
 
-async function deleteUser(id) {
-  const response = await fetch(`${BASE_URL}/${id}`, {
-    method: "DELETE",
-  });
+// async function deleteUser(id) {
+//   const response = await fetch(`${BASE_URL}/${id}`, {
+//     method: "DELETE",
+//   });
 
-  const data = await response.json();
-  return data;
-}
+//   const data = await response.json();
+//   return data;
+// }
 
 /* ------------------- API HANDLER ------------------- */
 
 export default async function handler(req, res) {
-  const { id, search } = req.query;
+  const { id } = req.query;
+  // const { id, search } = req.query;
   const method = req.method;
 
   try {
@@ -70,8 +71,9 @@ export default async function handler(req, res) {
     if (method === "GET") {
       if (id) {
         result = await getUserById(id);
-      } else if (search) {
-        result = await searchUsers(search);
+        // }
+        // else if (search) {
+        //   result = await searchUsers(search);
       } else {
         result = await getAllUsers();
       }
@@ -80,10 +82,10 @@ export default async function handler(req, res) {
     }
 
     /* ---------- POST: Add User ---------- */
-    if (method === "POST") {
-      result = await addUser(req.body);
-      return res.status(201).json(result);
-    }
+    // if (method === "POST") {
+    //   result = await addUser(req.body);
+    //   return res.status(201).json(result);
+    // }
 
     /* ---------- PUT: Update User ---------- */
     if (method === "PUT") {
@@ -97,15 +99,15 @@ export default async function handler(req, res) {
     }
 
     /* ---------- DELETE: Delete User ---------- */
-    if (method === "DELETE") {
-      if (!id) {
-        return res
-          .status(400)
-          .json({ error: "User ID is required for delete." });
-      }
-      result = await deleteUser(id);
-      return res.status(200).json(result);
-    }
+    // if (method === "DELETE") {
+    //   if (!id) {
+    //     return res
+    //       .status(400)
+    //       .json({ error: "User ID is required for delete." });
+    //   }
+    //   result = await deleteUser(id);
+    //   return res.status(200).json(result);
+    // }
 
     /* ---------- Unsupported Method ---------- */
     return res.status(405).json({ error: "Method Not Allowed" });
