@@ -1,6 +1,0 @@
-/*!
- * SAPUI5
- * (c) Copyright 2025 SAP SE. All rights reserved.
- */
-sap.ui.define(["sap/m/Tokenizer","sap/m/TokenizerRenderer"],function(t,e){"use strict";var a=t.extend("sap.ui.comp.smartfilterbar.SFBTokenizer",{metadata:{library:"sap.ui.comp"},renderer:e});a.prototype._copy=function(){this._fillClipboard("copy")};a.prototype._cutToClipboard=function(t){const e=this._sTokensTextsHTML||"";const a=this._sTokensTexts||"";const i=this._bSpecial||false;if(t.clipboardData){t.clipboardData.setData("text/plain",a);if(i){t.clipboardData.setData("text/html",e)}}else{t.originalEvent.clipboardData.setData("text/plain",a);if(i){t.originalEvent.clipboardData.setData("text/html",e)}}t.preventDefault()};a.prototype._fillClipboard=function(t){var e=this.getSelectedTokens();var a=false;var i=e.map(function(t){if(!a&&t.getTextForCopy){a=true}return t.getTextForCopy?t.getTextForCopy():t.getText()}).join("\r\n");var o="<table><tr>"+e.map(function(t){return"<td>"+t.getText()+"</td>"}).join("</tr><tr>")+"</tr></table>";this._sTokensTextsHTML=o;this._sTokensTexts=i;this._bSpecial=a;var r=this._cutToClipboard.bind(this);document.addEventListener(t,r);document.execCommand(t);document.removeEventListener(t,r)};return a});
-//# sourceMappingURL=SFBTokenizer.js.map
