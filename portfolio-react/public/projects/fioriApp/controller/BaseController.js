@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/mvc/Controller","sap/m/MessageBox"],function(e,t){"use strict";return e.extend("sap.dashboard.controller.BaseController",{onInit(){},getNavContainer(){return this.getOwnerComponent()._container},setNavContainer(e){this.getOwnerComponent()._container=e},showMessageBox(e,n){t[e](n)},backToDashboard(e,n){t.error(e,{details:n,contentWidth:"100px",onClose:()=>{this.getSideNav().fireItemSelect()}})},setSideNav(e){this.getOwnerComponent()._oSideNav=e},getSideNav(){return this.getOwnerComponent()._oSideNav}})});
+//# sourceMappingURL=BaseController.js.map

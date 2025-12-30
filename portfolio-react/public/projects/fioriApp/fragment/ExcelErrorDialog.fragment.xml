@@ -1,0 +1,23 @@
+<core:FragmentDefinition
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+>
+    <Dialog
+        showHeader="true"
+        title="Error"
+        type="Standard"
+        icon="sap-icon://error"
+        state="Error"
+    >
+        <List items="{oMasterModel>/aErrors}">
+            <StandardListItem title="{oMasterModel>error}" />
+        </List>
+        <buttons>
+            <Button
+                text="Close"
+                type="Emphasized"
+                press="onCloseDialog"
+            />
+        </buttons>
+    </Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,294 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:core="sap.ui.core"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    controllerName="sap.dashboard.controller.ProdDetails"
+>
+    <Page
+        id="idProdDetPage"
+        showHeader="false"
+        backgroundDesign="List"
+    >
+        <HBox
+            alignItems="End"
+            justifyContent="SpaceBetween"
+            class="sapUiSmallMarginTop sapUiSmallMarginBegin"
+        >
+            <Breadcrumbs currentLocationText="{oProdDetModel>/title}">
+                <Link
+                    text="{i18n>product}s"
+                    press="goBackToProducts"
+                />
+            </Breadcrumbs>
+            <HBox>
+                <Button
+                    icon="sap-icon://bar-code"
+                    class="sapUiTinyMarginBeginEnd"
+                    tooltip="{i18n>show} {i18n>barcode}"
+                    press="showBarcode"
+                />
+                <Button
+                    icon="sap-icon://qr-code"
+                    tooltip="{i18n>show} {i18n>qrCode}"
+                    class="sapUiTinyMarginBeginEnd"
+                    press="showQrcode"
+                />
+            </HBox>
+        </HBox>
+        <l:Grid
+            class="sapUiSmallMarginTop"
+            hSpacing="2"
+        >
+            <l:content>
+                <VBox alignItems="Center">
+                    <layoutData>
+                        <l:GridData span="XL4 L4 M5 S12" />
+                    </layoutData>
+                    <Image
+                        id="idImageViewer"
+                        src="{oProdDetModel>/fProdImg}"
+                        class="imgSize"
+                    />
+                    <HBox
+                        id="idImgContainer"
+                        items="{oProdDetModel>/images}"
+                        class="scrollHorizontal paddingTiny"
+                        width="100%"
+                    >
+                        <Image
+                            src="{oProdDetModel>}"
+                            press="onImagePress"
+                            class="carouselImage"
+                        />
+                    </HBox>
+                </VBox>
+                <VBox
+                    class="sapUiSmallMarginTop"
+                    width="100%"
+                >
+                    <layoutData>
+                        <l:GridData span="XL8 L8 M7 S12" />
+                    </layoutData>
+                    <Label text="{oProdDetModel>/brand}" />
+                    <Title
+                        text="{oProdDetModel>/title}"
+                        titleStyle="H2"
+                        wrapping="true"
+                    />
+                    <HBox justifyContent="SpaceBetween">
+                        <HBox
+                            alignItems="Center"
+                            class="sapUiSmallMarginTop"
+                        >
+                            <Text
+                                text="$ {oProdDetModel>/price}"
+                                class="salePrice sapUiTinyMarginEnd"
+                                visible="{=${oProdDetModel>/stock} > 0}"
+                            />
+                            <Title
+                                text="$ {parts:[{path:'oProdDetModel>/price'}, {path:'oProdDetModel>/discountPercentage'}], formatter:'.formatter.showPrice'}"
+                                titleStyle="H4"
+                                visible="{=${oProdDetModel>/stock} > 0}"
+                            />
+                            <ObjectStatus
+                                text="{oProdDetModel>/availabilityStatus}"
+                                state="Error"
+                                class="fontBold"
+                                visible="{=${oProdDetModel>/stock} === 0}"
+                                inverted="true"
+                            />
+                        </HBox>
+                        <HBox
+                            alignItems="Center"
+                            class="sapUiTinyMarginTop"
+                        >
+                            <RatingIndicator
+                                maxValue="1"
+                                value="1"
+                                iconSize="1rem"
+                                displayOnly="true"
+                                class="removeRatingMargin sapUiTinyMarginEnd"
+                            />
+                            <ObjectStatus
+                                text="{oProdDetModel>/rating}"
+                                state="{path:'oProdDetModel>/rating', formatter:'.formatter.ratingStatus'}"
+                                press="navToReviews"
+                                active="true"
+                                class="fontBigBold"
+                            />
+                        </HBox>
+                    </HBox>
+                    <Text
+                        text="{i18n>moq3}: {oProdDetModel>/minimumOrderQuantity}"
+                        visible="{=${oProdDetModel>/stock} > 0}"
+                    />
+                    <ObjectStatus
+                        title="{i18n>itemLeft}"
+                        text="{oProdDetModel>/stock}"
+                        state="{path:'oProdDetModel>/stock', formatter:'.formatter.stockStatus'}"
+                        class="fontBold"
+                        visible="{=${oProdDetModel>/stock} > 0}"
+                    />
+
+                    <html:hr />
+                    <Title
+                        text="{i18n>desc}: "
+                        class="sapUiTinyMarginTop"
+                    />
+                    <Text text="{oProdDetModel>/description}" />
+                    <HBox
+                        id="idGenTagContainer"
+                        class="sapUiTinyMarginTop"
+                        wrap="Wrap"
+                    />
+
+                    <IconTabBar
+                        id="idIconTabBarInlineMode"
+                        headerMode="Inline"
+                        expanded="{device>/isNoPhone}"
+                        class="sapUiResponsiveContentPadding sapUiTinyMarginTopBottom"
+                        backgroundDesign="Transparent"
+                    >
+                        <items>
+                            <IconTabFilter
+                                text="{i18n>itemDet}"
+                                key="det"
+                            >
+                                <HBox
+                                    alignItems="Center"
+                                    class="sapUiTinyMarginBeginEnd sapUiSmallMarginTop"
+                                >
+                                    <core:Icon
+                                        src="sap-icon://form"
+                                        size="2.75rem"
+                                        color="grey"
+                                        class="sapUiSmallMarginEnd"
+                                    />
+                                    <VBox>
+                                        <Text
+                                            text="{i18n>dimension} (WxHxD): {path:'oProdDetModel>/dimensions', formatter:'.formatter.bindDimensions'}"
+                                        />
+                                        <Text
+                                            text="{i18n>weight} (g): {oProdDetModel>/weight}"
+                                            class="sapUiTinyMarginTop"
+                                        />
+                                    </VBox>
+                                </HBox>
+                            </IconTabFilter>
+                            <IconTabFilter
+                                text="{i18n>warranty}"
+                                key="war"
+                            >
+                                <HBox
+                                    alignItems="Center"
+                                    class="sapUiTinyMarginBeginEnd sapUiSmallMarginTop"
+                                >
+                                    <core:Icon
+                                        src="sap-icon://shield"
+                                        size="2.75rem"
+                                        color="grey"
+                                        class="sapUiSmallMarginEnd"
+                                    />
+                                    <Text
+                                        text="{oProdDetModel>/warrantyInformation}"
+                                    />
+                                </HBox>
+                            </IconTabFilter>
+                            <IconTabFilter
+                                text="{i18n>shipping}"
+                                key="ship"
+                            >
+                                <HBox
+                                    alignItems="Center"
+                                    class="sapUiTinyMarginBeginEnd sapUiSmallMarginTop"
+                                >
+                                    <core:Icon
+                                        src="sap-icon://shipping-status"
+                                        size="2.75rem"
+                                        color="grey"
+                                        class="sapUiSmallMarginEnd"
+                                    />
+                                    <Text
+                                        text="{oProdDetModel>/shippingInformation}"
+                                    />
+                                </HBox>
+                            </IconTabFilter>
+                            <IconTabFilter
+                                text="{i18n>returns}"
+                                key="return"
+                            >
+                                <HBox
+                                    alignItems="Center"
+                                    class="sapUiTinyMarginBeginEnd sapUiSmallMarginTop"
+                                >
+                                    <core:Icon
+                                        src="sap-icon://undo"
+                                        size="2.75rem"
+                                        color="grey"
+                                        class="sapUiSmallMarginEnd"
+                                    />
+                                    <Text
+                                        text="{oProdDetModel>/returnPolicy}"
+                                    />
+                                </HBox>
+                            </IconTabFilter>
+                        </items>
+                    </IconTabBar>
+                    <html:hr />
+                    <Title
+                        text="{i18n>review}s: "
+                        class="sapUiSmallMarginTop"
+                    />
+                    <HBox justifyContent="Center">
+                        <Button
+                            text="{=${oProdDetModel>/reviewPresent} ? 'Edit review': 'Leave a review'}"
+                            press="onAddReviewPress"
+                            class="reviewBtnColor"
+                            width="20rem"
+                        />
+                    </HBox>
+                    <List
+                        id="idReviewList"
+                        items="{oProdDetModel>/reviews}"
+                        backgroundDesign="Transparent"
+                        class="sapUiSmallMargintop"
+                    >
+                        <CustomListItem>
+                            <VBox class="sapUiTinyMargin">
+                                <HBox
+                                    justifyContent="SpaceBetween"
+                                    class="sapUiTinyMarginBottom"
+                                >
+                                    <RatingIndicator
+                                        maxValue="5"
+                                        value="{oProdDetModel>rating}"
+                                        iconSize="1rem"
+                                        displayOnly="true"
+                                        class="removeRatingMargin sapUiTinyMarginEnd"
+                                    />
+                                    <Label
+                                        text="{path:'oProdDetModel>date', formatter:'.formatter.formatDate'}"
+                                    />
+                                </HBox>
+                                <HBox
+                                    class="sapUiTinyMarginBottom"
+                                    wrap="Wrap"
+                                >
+                                    <Label
+                                        text="{oProdDetModel>reviewerName}"
+                                    />
+                                    <Label
+                                        text="({oProdDetModel>reviewerEmail})"
+                                    />
+                                </HBox>
+                                <Text text="{oProdDetModel>comment}" />
+                            </VBox>
+                        </CustomListItem>
+                    </List>
+                </VBox>
+            </l:content>
+        </l:Grid>
+    </Page>
+</mvc:View>

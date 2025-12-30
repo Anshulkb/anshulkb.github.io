@@ -1,0 +1,57 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    displayBlock="true"
+    xmlns:tnt="sap.tnt"
+    controllerName="sap.dashboard.controller.App"
+>
+    <tnt:ToolPage id="toolPage">
+        <tnt:header>
+            <tnt:ToolHeader>
+                <Button
+                    id="sideNavigationToggleButton"
+                    icon="sap-icon://menu2"
+                    type="Transparent"
+                    press=".onSideNavButtonPress"
+                    tooltip="{i18n>navBtnTooltip}"
+                >
+                    <layoutData>
+                        <OverflowToolbarLayoutData priority="NeverOverflow" />
+                    </layoutData>
+                </Button>
+                <ToolbarSpacer />
+                <Title text="{mainModel>/sPageTitle}" />
+                <ToolbarSpacer />
+            </tnt:ToolHeader>
+        </tnt:header>
+        <tnt:sideContent>
+            <tnt:SideNavigation
+                id="idSideNav"
+                expanded="true"
+                selectedKey="{mainModel>/selectedNavListKey}"
+                itemSelect=".onItemSelect"
+            >
+                <tnt:NavigationList items="{mainModel>/navList}">
+                    <tnt:NavigationListItem
+                        key="{mainModel>id}"
+                        text="{mainModel>text}"
+                        icon="{mainModel>icon}"
+                        visible="{mainModel>visible}"
+                    />
+                </tnt:NavigationList>
+                <tnt:fixedItem>
+                    <tnt:NavigationList>
+                        <tnt:NavigationListItem
+                            id="idMaster"
+                            text="Master View"
+                            icon="sap-icon://wrench"
+                        />
+                    </tnt:NavigationList>
+                </tnt:fixedItem>
+            </tnt:SideNavigation>
+        </tnt:sideContent>
+        <tnt:mainContents>
+            <NavContainer id="pagesContainer" />
+        </tnt:mainContents>
+    </tnt:ToolPage>
+</mvc:View>
