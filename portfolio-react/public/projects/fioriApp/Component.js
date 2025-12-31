@@ -1,2 +1,0 @@
-sap.ui.define(["sap/ui/core/UIComponent","sap/ui/model/json/JSONModel","sap/ui/model/resource/ResourceModel","sap/ui/Device"],function(e,t,i,n){"use strict";return e.extend("sap.dashboard.Component",{metadata:{interfaces:["sap.ui.core.IAsyncContentCreation"],manifest:"json"},init(){e.prototype.init.apply(this,arguments);this.getRouter().initialize();const i=new t(n);i.setDefaultBindingMode("OneWay");this.setModel(i,"device")}})});
-//# sourceMappingURL=Component.js.map
