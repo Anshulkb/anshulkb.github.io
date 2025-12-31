@@ -1,0 +1,201 @@
+<mvc:View
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    displayBlock="true"
+    controllerName="sap.dashboard.controller.Employee"
+>
+    <Page showHeader="false">
+        <HBox
+            backgroundDesign="Solid"
+            class="smallPaddingTop sapUiTinyMargin filterBarRadius"
+            justifyContent="SpaceBetween"
+            alignItems="End"
+            width="99%"
+            wrap="Wrap"
+        >
+            <HBox wrap="Wrap">
+                <VBox class="filterBarPadding">
+                    <Label
+                        labelFor="idDesgMCB"
+                        text="{i18n>designation}:"
+                    />
+                    <MultiComboBox
+                        id="idDesgMCB"
+                        items="{path:'oEmpModel>/aAllDesg', sorter:[{path:'text', descending: false}]}"
+                        selectedKeys="{oEmpModel>/sSelDesgKeys}"
+                        showSelectAll="true"
+                        width="20rem"
+                        class="sapUiSmallMarginBottom"
+                    >
+                        <core:Item
+                            key="{oEmpModel>key}"
+                            text="{oEmpModel>text}"
+                        />
+                    </MultiComboBox>
+                    <Label
+                        labelFor="idDeptMCB"
+                        text="{i18n>department}:"
+                    />
+                    <MultiComboBox
+                        id="idDeptMCB"
+                        items="{path:'oEmpModel>/aAllDept', sorter:[{path:'text', descending: false}]}"
+                        selectedKeys="{oEmpModel>/sSelDeptKeys}"
+                        showSelectAll="true"
+                        width="20rem"
+                    >
+                        <core:Item
+                            key="{oEmpModel>key}"
+                            text="{oEmpModel>text}"
+                        />
+                    </MultiComboBox>
+                </VBox>
+                <VBox class="filterBarPadding">
+                    <Label
+                        labelFor="idOrgMCB"
+                        text="{i18n>organization}:"
+                    />
+                    <MultiInput
+                        id="idOrgMCB"
+                        showValueHelp="true"
+                        showSuggestion="true"
+                        width="20rem"
+                        class="sapUiSmallMarginBottom"
+                        valueHelpRequest="onShowOrgValueHelp"
+                    />
+                    <Label
+                        labelFor="idRoleMCB"
+                        text="{i18n>role}:"
+                    />
+                    <MultiComboBox
+                        id="idRoleMCB"
+                        items="{path:'oEmpModel>/aAllRole', sorter:[{path:'text', descending: false}]}"
+                        selectedKeys="{oEmpModel>/sSelRoleKeys}"
+                        showSelectAll="true"
+                        width="20rem"
+                    >
+                        <core:Item
+                            key="{oEmpModel>key}"
+                            text="{oEmpModel>text}"
+                        />
+                    </MultiComboBox>
+                </VBox>
+                <VBox
+                    class="tinyPaddingTop sapUiSmallMarginBegin"
+                    width="21rem"
+                >
+                    <Label
+                        labelFor="idRBG"
+                        text="{i18n>gender}"
+                    />
+                    <RadioButtonGroup
+                        id="idRBG"
+                        columns="3"
+                        selectedIndex="{oEmpModel>/sSelGender}"
+                    >
+                        <RadioButton
+                            id="RBG-1"
+                            text="{i18n>both}"
+                        />
+                        <RadioButton
+                            id="RBG-2"
+                            text="{i18n>male}"
+                        />
+                        <RadioButton
+                            id="RBG-3"
+                            text="{i18n>female}"
+                        />
+                    </RadioButtonGroup>
+                </VBox>
+            </HBox>
+            <HBox
+                width="100%"
+                justifyContent="End"
+            >
+                <Button
+                    text="{i18n>search}"
+                    icon="sap-icon://search"
+                    type="Emphasized"
+                    width="{=${device>/system/phone} ? '6rem' : '10rem'}"
+                    class="sapUiTinyMarginBottom sapUiSmallMarginBeginEnd"
+                    press="onFilterSearch"
+                    tooltip="{i18n>search}"
+                />
+            </HBox>
+        </HBox>
+        <Table
+            id="idEmpTable"
+            items="{oEmpModel>/Employees}"
+            growingThreshold="{=${oEmpModel>/Employees} ? ${oEmpModel>/Employees}.length : 0}"
+            growing="true"
+            autoPopinMode="true"
+            contextualWidth="Auto"
+            class="sapUiSmallMarginBegin sapUiTinyMarginBottom"
+            width="98%"
+        >
+            <headerToolbar>
+                <OverflowToolbar>
+                    <Title text="{i18n>employees} ({oEmpModel>/count}) " />
+                    <ToolbarSpacer />
+                    <Button
+                        icon="sap-icon://sort"
+                        press="onSortPress"
+                        type="Transparent"
+                        tooltip="{i18n>sortTbl}"
+                    />
+                    <Button
+                        icon="sap-icon://reset"
+                        press="onResetPress"
+                        type="Transparent"
+                        tooltip="{i18n>resetTbl}"
+                    />
+                    <Button
+                        icon="sap-icon://excel-attachment"
+                        press="onDownloadPress"
+                        type="Transparent"
+                        tooltip="{i18n>downExcel}"
+                    />
+                </OverflowToolbar>
+            </headerToolbar>
+            <columns>
+                <Column width="10rem">
+                    <Text text="{i18n>name}" />
+                </Column>
+                <Column width="5rem">
+                    <Text text="{i18n>gender}" />
+                </Column>
+                <Column width="9rem">
+                    <Text text="{i18n>designation}" />
+                </Column>
+                <Column width="10rem">
+                    <Text text="{i18n>department}" />
+                </Column>
+                <Column width="10rem">
+                    <Text text="{i18n>organization}" />
+                </Column>
+                <Column width="5rem">
+                    <Text text="{i18n>role}" />
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem
+                    type="Navigation"
+                    press="onTableItemSelect"
+                >
+                    <Text
+                        text="{oEmpModel>firstName} {oEmpModel>maidenName} {oEmpModel>lastName}"
+                    />
+                    <Text
+                        text="{path:'oEmpModel>gender', formatter:'.formatter.firstLetterCaps'}"
+                    />
+                    <Text text="{oEmpModel>company/title}" />
+                    <Text text="{oEmpModel>company/department}" />
+                    <Text text="{oEmpModel>company/name}" />
+                    <Text
+                        text="{path:'oEmpModel>role', formatter:'.formatter.firstLetterCaps'}"
+                    />
+                </ColumnListItem>
+            </items>
+        </Table>
+    </Page>
+</mvc:View>
