@@ -1,0 +1,109 @@
+header {
+  /* background-color: #333333; */
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: -webkit-fill-available;
+  top: 0px;
+  position: fixed;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+header {
+  background: transparent;
+  z-index: 1000;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+header.scrolled {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+/* .list-type {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header-list-items {
+  text-align: center;
+  padding: 14px 16px;
+} */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  /* padding: 0; */
+  overflow: hidden;
+  /* background-color: #333333; */
+  padding-bottom: 1.25rem;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  /* padding: 1.5rem 1.25rem; */
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: gray;
+  /* background-color: #111111; */
+}
+
+.item.selected {
+  /* background: 0 100% / 0.188rem 100% no-repeat
+      linear-gradient(0deg, #0064d9, #0064d9),
+    #ebf8ff; */
+  border-bottom: 4px solid green;
+  color: gray;
+}
+
+.item.unSelected {
+  background: inherit;
+  border-bottom: inherit;
+  color: white;
+}
+
+li {
+  /* text-align: center; */
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  /* padding-top: 1.5rem; */
+  margin-top: 1.5rem;
+}
+
+.logo-text {
+  rotate: -45deg;
+  margin-block-start: 0.25em;
+  margin-block-end: 0.25rem;
+  margin-left: 0.5rem;
+  margin-right: 0.35rem;
+  animation: spin 5s linear infinite;
+}
+
+.logo-border {
+  border: 4px solid white;
+  rotate: 45deg;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
